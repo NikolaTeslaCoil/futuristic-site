@@ -171,7 +171,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                   </div>
 
                   <div>
-                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Message</label>
+                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Melding</label>
                     <Textarea
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
