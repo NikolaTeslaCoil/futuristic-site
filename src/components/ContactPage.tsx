@@ -40,14 +40,14 @@ export function ContactPage({ darkMode }: ContactPageProps) {
     {
       icon: Mail,
       title: 'Email',
-      value: 'contact@yanovasolutions.com',
-      link: 'mailto:contact@yanovasolutions.com'
+      value: 'kontakt@brandboostmedia.no',
+      link: 'mailto:kontakt@brandboostmedia.no'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+213 675036186',
-      link: 'tel:+213675036186'
+      value: '+47 91920983',
+      link: 'tel:+47 91920983'
     },
     {
       icon: Phone,
@@ -189,7 +189,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                     type="submit"
                     className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 py-6 group"
                   >
-                    Send Message
+                    Send 
                     <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </form>
