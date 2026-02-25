@@ -123,10 +123,10 @@ export function ContactPage({ darkMode }: ContactPageProps) {
               />
 
               <div className="relative z-10">
-                <h2 className={`text-3xl mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Send us a Message</h2>
+                <h2 className={`text-3xl mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Send melding</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Your Name</label>
+                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Navn</label>
                     <Input
                       type="text"
                       value={formData.name}
@@ -141,7 +141,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                   </div>
 
                   <div>
-                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Email Address</label>
+                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Epost</label>
                     <Input
                       type="email"
                       value={formData.email}
