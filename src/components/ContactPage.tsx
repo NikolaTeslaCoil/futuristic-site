@@ -87,7 +87,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
             <MessageSquare className="w-16 h-16 text-cyan-400" />
           </motion.div>
           <h1 className={`text-5xl md:text-7xl mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-            Get In <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Touch</span>
+            Kontakt <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Oss</span>
           </h1>
           <p className={`text-xl max-w-3xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
             Let's build the next layer of digital defense together.
