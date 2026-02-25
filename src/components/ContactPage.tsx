@@ -52,8 +52,8 @@ export function ContactPage({ darkMode }: ContactPageProps) {
     {
       icon: Phone,
       title: 'Phone (Alt)',
-      value: '+213 555247170',
-      link: 'tel:+213555247170'
+      value: '+47 91920983',
+      link: 'tel:+4791920983'
     }
   ];
 
