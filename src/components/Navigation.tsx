@@ -48,8 +48,8 @@ export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode 
                 />
               </div>
               <div>
-                <div className={darkMode ? 'tracking-wider text-cyan-400' : 'tracking-wider text-cyan-600'}>YANOV</div>
-                <div className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Solutions</div>
+                <div className={darkMode ? 'tracking-wider text-cyan-400' : 'tracking-wider text-cyan-600'}>BRANDBOOST</div>
+                <div className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>MARKETING</div>
               </div>
             </motion.div>
 
