@@ -535,7 +535,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                     <Eye className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl text-purple-400 mb-2">Nettside- og appdesign</h3>
-                  <p className="text-sm text-gray-400">Moderne, gjennomført og brukervennlig.</p>
+                  <p className="text-sm text-gray-400">Moderne, gjennomført og optimalisert for brukeropplevelse.</p>
                 </div>
               </Card>
             </motion.div>
