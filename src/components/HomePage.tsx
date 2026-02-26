@@ -34,12 +34,12 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
   ];
 
   const services = [
-    { icon: Shield, title: 'Cybersecurity Consulting & Auditing', color: 'cyan' },
-    { icon: Network, title: 'Network Design & Installation', color: 'purple' },
-    { icon: Brain, title: 'Training & Capacity Building', color: 'green' },
-    { icon: Cpu, title: 'Design & Infography', color: 'orange' },
-    { icon: Eye, title: 'Photography & Filmmaking', color: 'pink' },
-    { icon: Server, title: 'Web & App Development', color: 'indigo' },
+    { icon: Shield, title: 'Nettside- og Apputvikling', color: 'cyan' },
+    { icon: Network, title: 'Automatisering & Systemintegrasjon', color: 'purple' },
+    { icon: Brain, title: 'AI-Assistenter & Kundedialog', color: 'green' },
+    { icon: Cpu, title: 'Digital Strategi & Struktur', color: 'orange' },
+    { icon: Eye, title: 'Konverteringsoptimalisering', color: 'pink' },
+    { icon: Server, title: 'Innholdsproduksjon (Foto & Video)', color: 'indigo' },
   ];
 
   const projects = [
