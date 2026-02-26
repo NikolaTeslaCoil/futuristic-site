@@ -43,9 +43,9 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
   ];
 
   const projects = [
-    { name: 'Cerberus-PI', description: 'Network Intrusion Detection Device - Plug-and-play IDS for protecting small and medium-sized networks with real-time threat alerts' },
-    { name: 'Yanova OS', description: 'The Defensive Cyber Operating System - Linux-hardened OS built for network defense, SOC environments, and enterprise security' },
-    { name: 'Yanova VA Machine', description: 'Plug & Play Vulnerability Assessment Device - Automatic network scanning and professional security reports in minutes' },
+    { name: 'Intelligent Nettsideplattform', description: 'Moderne, konverteringsoptimaliserte nettsider og apper utviklet for ytelse, skalerbarhet og vekst.' },
+    { name: 'Automatisert Driftssystem', description: 'Skreddersydde digitale arbeidsflyter som effektiviserer prosesser og reduserer manuelt arbeid.' },
+    { name: 'AI-drevet Kundedialog', description: 'Smarte assistenter som håndterer henvendelser, kvalifiserer leads og forbedrer kundeopplevelsen.' },
   ];
 
   return (
