@@ -181,7 +181,7 @@ export function CookiePolicyPage({ darkMode }: CookiePolicyPageProps) {
                 <p className={`leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                   Har du spørsmål om vår bruk av cookies? Kontakt oss gjerne på:{' '}
                   <a href="mailto:kontakt@dittdomene.no" className="text-cyan-400 hover:text-cyan-300 underline">
-                    kontakt@dittdomene.no
+                    post@brandboostmarketing.no
                   </a>
                 </p>
               </section>
