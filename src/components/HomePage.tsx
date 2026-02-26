@@ -365,7 +365,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                 ? 'bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30'
                 : 'bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-600/40'
             }`}>
-              <h3 className={`text-2xl mb-4 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>The Yanova Ecosystem</h3>
+              <h3 className={`text-2xl mb-4 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>Helhetlig Digital Infrastruktur</h3>
               <p className={`leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 All Yanova products are interconnected: <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Yanova VA Machine</span> identifies vulnerabilities, 
                 <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}> Cerberus-PI</span> monitors and detects intrusions, 
