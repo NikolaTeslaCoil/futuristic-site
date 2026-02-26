@@ -358,9 +358,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               About <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Yanova</span>
             </h2>
             <p className={`text-xl leading-relaxed mb-6 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              Based in Tlemcen, Algeria, Yanova Solutions is a pioneering cybersecurity and IT innovation company. 
-              We specialize in building advanced defense systems, secure infrastructure, and intelligent technology 
-              solutions that protect and empower businesses in the digital age.
+              Hos Brandboost Marketing mener vi at alle bedrifter fortjener tilgang til den transformative kraften i kunstig intelligens. Vårt oppdrag er å bygge bro mellom kompleks AI-teknologi og praktiske forretningsløsninger, slik at selskaper kan automatisere prosesser, redusere kostnader og fokusere på det de gjør best.
             </p>
             <div className={`rounded-2xl p-8 mt-8 ${
               darkMode 
