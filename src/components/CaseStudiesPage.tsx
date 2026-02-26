@@ -6,9 +6,10 @@ import cerberusPiImage from "../assets/f6a544fb3b3b36514746bdcb63017562b8a62f6b.
 
 interface CaseStudiesPageProps {
   darkMode: boolean;
+  setCurrentPage: (page: string) => void;
 }
 
-export function CaseStudiesPage({ darkMode }: CaseStudiesPageProps) {
+export function CaseStudiesPage({ darkMode, setCurrentPage }: CaseStudiesPageProps) {
   const caseStudies = [
   {
     id: 1,
