@@ -278,7 +278,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               transition={{ delay: 1 }}
               className="absolute -bottom-16 left-1/2 -translate-x-1/2 text-center"
             >
-              <p className="text-sm text-cyan-400/60">Click icons t navigate</p>
+              <p className="text-sm text-cyan-400/60"></p>
             </motion.div>
           </div>
 
