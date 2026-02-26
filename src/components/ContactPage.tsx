@@ -156,7 +156,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                   </div>
 
                   <div>
-                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Subject</label>
+                    <label className={`block text-sm mb-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Emne</label>
                     <Input
                       type="text"
                       value={formData.subject}
