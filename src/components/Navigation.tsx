@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { Menu, X, Shield, Moon, Sun } from 'lucide-react';
 import { Button } from './ui/button';
-import brandboostLogo from '../assets/brandboost-logo.png';
+import brandboostMark from "../assets/brandboost-mark.png";
 
 interface NavigationProps {
   currentPage: string;
