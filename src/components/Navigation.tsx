@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Menu, X, Shield, Moon, Sun } from 'lucide-react';
 import { Button } from './ui/button';
 import brandboostMark from "../assets/brandboost-mark.png";
+import brandboostIcon from "../assets/brandboost-icon.png";
 
 interface NavigationProps {
   currentPage: string;
