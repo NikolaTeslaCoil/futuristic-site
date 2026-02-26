@@ -595,11 +595,11 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   <span className="text-sm text-cyan-400">Coming Soon</span>
                 </div>
                 <h3 className="text-2xl mb-3 text-white">
-                  <span className="text-cyan-400">Yanova Cloud Control</span>
+                  <span className="text-cyan-400">Smartere Digitale Systemer</span>
                 </h3>
                 <p className="text-gray-400">
-                  Unified platform to manage all your Yanova security nodes from a single dashboard. 
-                  Monitor vulnerabilities, intrusion alerts, and system health across your entire infrastructure.
+                  Én samlet plattform for design, automatisering og AI-løsninger.
+Vi bygger nettsider, kobler systemer og utvikler intelligente assistenter som jobber sammen for å skape målbar vekst.
                 </p>
               </div>
             </Card>
