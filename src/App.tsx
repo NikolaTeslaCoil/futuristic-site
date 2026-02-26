@@ -54,7 +54,12 @@ export default function App() {
       <main className="relative z-10">
         {currentPage === 'home' && <HomePage setCurrentPage={setCurrentPage} darkMode={darkMode} />}
         {currentPage === 'services' && <ServicesPage darkMode={darkMode} />}
-        {currentPage === 'case-studies' && <CaseStudiesPage darkMode={darkMode} />}
+        {currentPage === 'case-studies' && (
+  <CaseStudiesPage
+    darkMode={darkMode}
+    setCurrentPage={setCurrentPage}
+  />
+)}
         {currentPage === 'contact' && <ContactPage darkMode={darkMode} />}
         {currentPage === 'privacy' && <PrivacyPolicyPage darkMode={darkMode} />}
         {currentPage === 'cookies' && <CookiePolicyPage darkMode={darkMode} />}
