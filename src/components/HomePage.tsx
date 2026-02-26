@@ -199,7 +199,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                           boxShadow: '0 0 20px rgba(0, 183, 255, 0.5)'
                         }}
                       >
-                        <div className="text-xs text-cyan-400/60 mb-1 tracking-wider uppercase">Navigate to</div>
+                        <div className="text-xs text-cyan-400/60 mb-1 tracking-wider uppercase">Se mer</div>
                         <div className="text-lg text-cyan-400 mb-1">
                           {navItem.title}
                         </div>
