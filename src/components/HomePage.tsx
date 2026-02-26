@@ -27,10 +27,10 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
   const navigationItems = [
     { icon: Shield, title: 'Cybersecurity', action: () => setCurrentPage('services'), type: 'page' },
     { icon: Eye, title: 'Case Studies', action: () => setCurrentPage('case-studies'), type: 'page' },
-    { icon: Network, title: 'Services', action: () => setCurrentPage('services'), type: 'page' },
+    { icon: Network, title: 'Tjenester', action: () => setCurrentPage('services'), type: 'page' },
     { icon: Server, title: 'Cerberus-PI', action: () => setCurrentPage('case-studies'), type: 'project' },
     { icon: Terminal, title: 'Yanova OS', action: () => setCurrentPage('case-studies'), type: 'project' },
-    { icon: Database, title: 'Contact', action: () => setCurrentPage('contact'), type: 'page' },
+    { icon: Database, title: 'Kontakt', action: () => setCurrentPage('contact'), type: 'page' },
   ];
 
   const services = [
