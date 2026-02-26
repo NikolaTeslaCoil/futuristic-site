@@ -534,8 +534,8 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
                     <Eye className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl text-purple-400 mb-2">Yanova VA Machine</h3>
-                  <p className="text-sm text-gray-400">Identifies vulnerabilities</p>
+                  <h3 className="text-xl text-purple-400 mb-2">Nettside- og appdesign</h3>
+                  <p className="text-sm text-gray-400">Moderne, gjennomført og brukervennlig.</p>
                 </div>
               </Card>
             </motion.div>
@@ -553,8 +553,8 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
                     <Shield className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl text-cyan-400 mb-2">Cerberus-PI</h3>
-                  <p className="text-sm text-gray-400">Monitors & detects intrusions</p>
+                  <h3 className="text-xl text-cyan-400 mb-2">Automatisering av arbeidsflyter og prosesser</h3>
+                  <p className="text-sm text-gray-400">Koble systemer og spar verdifull tid.</p>
                 </div>
               </Card>
             </motion.div>
@@ -572,8 +572,8 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
                     <Terminal className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl text-orange-400 mb-2">Yanova OS</h3>
-                  <p className="text-sm text-gray-400">Defends, analyzes & manages</p>
+                  <h3 className="text-xl text-orange-400 mb-2">AI-drevne assistenter</h3>
+                  <p className="text-sm text-gray-400">Chatagenter og automatisering designet for engasjement.</p>
                 </div>
               </Card>
             </motion.div>
