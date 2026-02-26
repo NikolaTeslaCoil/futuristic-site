@@ -88,7 +88,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   }}
                 >
                   <img 
-                    src={yanovaLogo} 
+                    src={brandboostLogo} 
                     alt="Yanova Solutions" 
                     className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(0,183,255,0.6)]"
                   />
