@@ -204,7 +204,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                           {navItem.title}
                         </div>
                         <div className="text-xs text-gray-400 flex items-center gap-1 justify-end">
-                          <span>{navItem.type === 'project' ? 'View Project' : 'Explore Page'}</span>
+                          <span>{navItem.type === 'project' ? 'Se prosjekt' : 'Utforsk'}</span>
                           <ChevronRight className="w-3 h-3" />
                         </div>
                       </div>
