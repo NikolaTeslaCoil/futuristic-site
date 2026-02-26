@@ -10,79 +10,79 @@ interface CaseStudiesPageProps {
 
 export function CaseStudiesPage({ darkMode }: CaseStudiesPageProps) {
   const caseStudies = [
-    {
-      id: 1,
-      title: 'Yanova OS',
-      subtitle: 'The Defensive Cyber Operating System',
-      description: 'A secure, lightweight, and hardened operating system built for professionals in network defense, SOC environments, and enterprise security. Integrates system monitoring, threat detection, and network management in a modern and intuitive dashboard.',
-      icon: Terminal,
-      technologies: ['Linux-hardened kernel', 'i3-wm + Xorg', 'Tauri (Rust)', 'Suricata/Zeek IDS', 'nftables', 'AppArmor', 'PipeWire'],
-      features: [
-        'Real-time system and network monitoring',
-        'Threat detection and analytics dashboard',
-        'Role-Based Access Control with immutable filesystem',
-        'Modular design expandable with plugins (DFIR, Threat Intel)',
-        'Self-healing snapshots and encrypted configuration',
-        'Future Yanova Cloud Control integration'
-      ],
-      gradient: 'from-orange-500 to-red-600',
-      year: '2024'
-    },
-    {
-      id: 2,
-      title: 'Cerberus-PI',
-      subtitle: 'Network Intrusion Detection Device',
-      description: 'A Raspberry Pi–based intrusion detection and monitoring system designed to protect small and medium-sized networks. Detects, logs, and reports suspicious activities while remaining lightweight and affordable.',
-      icon: Shield,
-      technologies: ['Raspberry Pi 4/5', 'Suricata IDS', 'Python', 'Syslog Protocol', 'Web Dashboard'],
-      features: [
-        'Plug-and-play network integration',
-        'Real-time packet inspection and intrusion alerts',
-        'Local or remote log backup to NAS',
-        'Dashboard for traffic visualization',
-        'System health monitoring',
-        'Educational IDS training capability'
-      ],
-      gradient: 'from-cyan-500 to-blue-600',
-      year: '2024'
-    },
-    {
-      id: 3,
-      title: 'Yanova VA Machine',
-      subtitle: 'Plug & Play Vulnerability Assessment Device',
-      description: 'A portable vulnerability assessment tool built on Raspberry Pi or small form-factor PC. When plugged into a network, it automatically scans the infrastructure, identifies vulnerabilities, and generates a full technical report.',
-      icon: Eye,
-      technologies: ['Raspberry Pi/SFF PC', 'Nmap', 'OpenVAS/Greenbone', 'Nikto', 'Python Automation', 'HTML/PDF Reports'],
-      features: [
-        'One-step vulnerability scanning (plug & scan)',
-        'Full asset discovery and port mapping',
-        'Risk assessment categorized by severity',
-        'Exportable professional reports for audits',
-        'DHCP auto-detection',
-        'Integration with Yanova OS for deeper analysis'
-      ],
-      gradient: 'from-purple-500 to-pink-600',
-      year: '2024'
-    },
-    {
-      id: 4,
-      title: 'NAS Server with Cerberus Integration',
-      subtitle: 'Secure Network Storage Solution',
-      description: 'Enterprise-grade Network Attached Storage system integrated with Cerberus-PI security monitoring, providing encrypted, monitored, and highly available data storage with automatic threat detection.',
-      icon: Database,
-      technologies: ['NAS Hardware', 'RAID Configuration', 'AES Encryption', 'Cerberus-PI', 'SMB/NFS', 'Syslog'],
-      features: [
-        'Encrypted data storage with AES-256',
-        'Real-time security monitoring via Cerberus-PI',
-        'Automated backups with versioning',
-        'Centralized log collection from security devices',
-        'Access control management',
-        'High availability configuration'
-      ],
-      gradient: 'from-green-500 to-emerald-600',
-      year: '2024'
-    }
-  ];
+  {
+    id: 1,
+    title: 'Intelligent Kundeassistent',
+    subtitle: 'AI-basert automatisering av kundedialog',
+    description: 'Et helautomatisert kundesystem som håndterer dialog, kvalifisering av leads, booking og oppfølging. Løsningen reduserer responstid, eliminerer manuelle prosesser og øker konverteringsgrad.',
+    icon: Terminal,
+    technologies: ['AI-dialogmotor', 'Automatiserte arbeidsflyter', 'CRM-integrasjon', 'API-tilkoblinger', 'Egendefinert dashboard'],
+    features: [
+      '24/7 automatisk kundekommunikasjon',
+      'Intelligent kvalifisering av henvendelser',
+      'Automatisk møtebooking',
+      'Sanntidssynkronisering av data',
+      'Eskalering til menneskelig support ved behov',
+      'Analyse og ytelsesmåling'
+    ],
+    gradient: 'from-orange-500 to-red-600',
+    year: '2024'
+  },
+  {
+    id: 2,
+    title: 'Forretningsautomatisering',
+    subtitle: 'Effektivisering av interne prosesser',
+    description: 'Skreddersydd automasjon som kobler sammen systemer, økonomiverktøy og kundedata for å redusere manuelt arbeid og forbedre operasjonell effektivitet.',
+    icon: Shield,
+    technologies: ['API-integrasjoner', 'Arbeidsflyt-automatisering', 'Datasynkronisering', 'Sikker skyløsning', 'Overvåking og logging'],
+    features: [
+      'Automatisert fakturaflyt',
+      'Godkjenningsprosesser internt',
+      'Automatisk datavalidering',
+      'Feildeteksjon og gjenoppretting',
+      'Sanntidsrapportering',
+      'Tilgangsstyring'
+    ],
+    gradient: 'from-cyan-500 to-blue-600',
+    year: '2024'
+  },
+  {
+    id: 3,
+    title: 'Moderne Webplattform',
+    subtitle: 'Skalerbar nettside- og appløsning',
+    description: 'En høyytelses webplattform utviklet for konvertering, hastighet og skalerbarhet. Bygget med moderne arkitektur og sikker distribusjon.',
+    icon: Eye,
+    technologies: ['Moderne frontend-rammeverk', 'Sikre backend-APIer', 'Ytelsesoptimalisering', 'Skydeploy', 'Analyseverktøy'],
+    features: [
+      'Konverteringsoptimalisert design',
+      'Rask lastetid',
+      'Sikker autentisering',
+      'Modulbasert innholdssystem',
+      'SEO-optimalisering',
+      'Skalerbar hosting'
+    ],
+    gradient: 'from-purple-500 to-pink-600',
+    year: '2024'
+  },
+  {
+    id: 4,
+    title: 'Digital Kontrollplattform',
+    subtitle: 'Sentralisert oversikt og styring',
+    description: 'En samlet kontrollplattform som gir ledelsen innsikt i nøkkeltall, kundedata og operasjonell status – alt i ett sikkert dashboard.',
+    icon: Database,
+    technologies: ['Datainnsamling', 'Automatiserte triggere', 'Dashboard UI', 'Sikker databehandling', 'Varslingssystem'],
+    features: [
+      'Sanntidsovervåking av KPIer',
+      'Automatiske varsler',
+      'Datadrevet beslutningsstøtte',
+      'Ledelsesrapportering',
+      'Flere brukernivåer',
+      'Revisjonsspor og sikker logging'
+    ],
+    gradient: 'from-green-500 to-emerald-600',
+    year: '2024'
+  }
+];
 
   return (
     <div className="pt-32 pb-20">
