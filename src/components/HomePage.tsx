@@ -27,7 +27,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
   const navigationItems = [
     { icon: Shield, title: 'Tjenester', action: () => setCurrentPage('services'), type: 'page' },
     { icon: Eye, title: 'Prosjekter', action: () => setCurrentPage('case-studies'), type: 'page' },
-    { icon: Network, title: 'Tjenester', action: () => setCurrentPage('services'), type: 'page' },
+    { icon: Network, title: 'AI Assistenter', action: () => setCurrentPage('services'), type: 'page' },
     { icon: Server, title: 'Nettsider', action: () => setCurrentPage('case-studies'), type: 'project' },
     { icon: Terminal, title: 'Automatisering', action: () => setCurrentPage('case-studies'), type: 'project' },
     { icon: Database, title: 'Kontakt', action: () => setCurrentPage('contact'), type: 'page' },
