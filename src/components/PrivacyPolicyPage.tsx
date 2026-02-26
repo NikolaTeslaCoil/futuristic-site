@@ -114,7 +114,7 @@ export function PrivacyPolicyPage({ darkMode }: PrivacyPolicyPageProps) {
                   <li>Sletting av dine personopplysninger</li>
                   <li>Begrensning av behandling</li>
                   <li>Dataportabilitet</li>
-                  <li>Å protestere mot behandling</li>
+                  <li>Å protestere mot behandling Design template by [Abdellah Rayen] (CC BY 4.0)</li>
                 </ul>
               </section>
 
