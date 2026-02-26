@@ -128,16 +128,14 @@ export function PrivacyPolicyPage({ darkMode }: PrivacyPolicyPageProps) {
                 </p>
                 <p className={`mt-8 text-xs ${darkMode ? 'text-gray-500' : 'text-gray-500'}`}>
   Dette nettstedet er basert på et originalt design av Abdellah Rayen,
-  lisensiert under CC BY 4.0.
-</p>
-<p className="text-xs">
+  lisensiert under
   <a
     href="https://creativecommons.org/licenses/by/4.0/"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-cyan-400 hover:underline"
+    className="text-cyan-400 hover:underline ml-1"
   >
-    https://creativecommons.org/licenses/by/4.0/
+    CC BY 4.0
   </a>
 </p>
               </section>
