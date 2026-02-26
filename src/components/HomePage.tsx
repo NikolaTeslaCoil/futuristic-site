@@ -25,11 +25,11 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
 
   // Navigation items for orbiting icons
   const navigationItems = [
-    { icon: Shield, title: 'AI assistent', action: () => setCurrentPage('services'), type: 'page' },
-    { icon: Eye, title: 'Case Studies', action: () => setCurrentPage('case-studies'), type: 'page' },
+    { icon: Shield, title: 'Tjenester', action: () => setCurrentPage('services'), type: 'page' },
+    { icon: Eye, title: 'Prosjekter', action: () => setCurrentPage('case-studies'), type: 'page' },
     { icon: Network, title: 'Tjenester', action: () => setCurrentPage('services'), type: 'page' },
-    { icon: Server, title: 'Cerberus-PI', action: () => setCurrentPage('case-studies'), type: 'project' },
-    { icon: Terminal, title: 'Yanova OS', action: () => setCurrentPage('case-studies'), type: 'project' },
+    { icon: Server, title: 'Nettsider', action: () => setCurrentPage('case-studies'), type: 'project' },
+    { icon: Terminal, title: 'Automatisering', action: () => setCurrentPage('case-studies'), type: 'project' },
     { icon: Database, title: 'Kontakt', action: () => setCurrentPage('contact'), type: 'page' },
   ];
 
