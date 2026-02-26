@@ -9,7 +9,10 @@ import { HomePage } from './components/HomePage';
 import { ServicesPage } from './components/ServicesPage';
 import { CaseStudiesPage } from './components/CaseStudiesPage';
 import { ContactPage } from './components/ContactPage';
+import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
+import { CookiePolicyPage } from './components/CookiePolicyPage';
 import { Navigation } from './components/Navigation';
+import { Footer } from './components/Footer';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -53,7 +56,11 @@ export default function App() {
         {currentPage === 'services' && <ServicesPage darkMode={darkMode} />}
         {currentPage === 'case-studies' && <CaseStudiesPage darkMode={darkMode} />}
         {currentPage === 'contact' && <ContactPage darkMode={darkMode} />}
+        {currentPage === 'privacy' && <PrivacyPolicyPage darkMode={darkMode} />}
+        {currentPage === 'cookies' && <CookiePolicyPage darkMode={darkMode} />}
       </main>
+
+      <Footer setCurrentPage={setCurrentPage} darkMode={darkMode} />
 
       <style jsx>{`
         @keyframes gridScroll {
