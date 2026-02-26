@@ -370,8 +370,8 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                 Vi bygger digitale løsninger som henger sømløst sammen: <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>nettside- og appdesign</span> skaper et profesjonelt og tillitsvekkende førsteinntrykk, 
                 <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}> automatiserte arbeidsprosesser</span> effektiviserer driften og reduserer manuelt arbeid, og 
                 <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}> AI-drevne assistenter</span> forbedrer dialogen med kunder og ansatte. Sammen skaper vi et helhetlig digitalt økosystem <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>som sparer tid, reduserer kostnader og gir målbar forretningsverdi</span>  tilpasset din virksomhet og dine mål.
-                Together, they form a complete cybersecurity ecosystem <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>built in Algeria, made for the world</span> — 
-                empowering enterprises, schools, and institutions to secure their digital infrastructures independently.
+                Sammen bygger vi digitale løsninger <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>med struktur, presisjon og fremtidsrettet teknologi</span> — 
+                designet for å gi virksomheten din et varig konkurransefortrinn.
               </p>
             </div>
           </motion.div>
