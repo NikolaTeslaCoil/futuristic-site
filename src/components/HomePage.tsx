@@ -509,7 +509,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl text-center mb-8"
           >
-            The <span className="text-cyan-400">Yanova Ecosystem</span>
+            Automatiserings- og <span className="text-cyan-400">AI-økosystemet</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -517,7 +517,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
             viewport={{ once: true }}
             className="text-center text-gray-400 mb-16 max-w-3xl mx-auto text-lg"
           >
-            An interconnected defense system where each product works in harmony to provide complete cybersecurity coverage
+            Et kraftfullt sett tjenester som fungerer sammen for økt effektivitet, bedre kundeopplevelser og moderne digitale løsninger.
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
