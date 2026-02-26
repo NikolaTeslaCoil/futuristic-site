@@ -251,7 +251,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                   ? 'bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30'
                   : 'bg-white/80 border-cyan-600/40 shadow-lg'
               }`}>
-                <h3 className={`text-2xl mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Connect With Us</h3>
+                <h3 className={`text-2xl mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>Følg oss</h3>
                 <div className="flex gap-4">
                   {socialLinks.map((social, index) => {
                     const Icon = social.icon;
@@ -286,7 +286,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
         >
           <div className="inline-block relative">
             <h3 className={`text-2xl ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              Let's secure your digital future <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>together</span>
+              La oss skape digital vekst <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>sammen</span>
             </h3>
             <motion.div
               className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent"
