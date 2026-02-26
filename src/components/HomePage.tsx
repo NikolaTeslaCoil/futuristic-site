@@ -492,7 +492,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               variant="outline"
               className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10"
             >
-              View All Case Studies
+              Se Våre prosjekter
               <ChevronRight className="ml-2" />
             </Button>
           </motion.div>
