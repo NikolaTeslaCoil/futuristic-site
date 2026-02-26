@@ -3,7 +3,7 @@ import { Shield, Lock, Brain, Server, Cpu, ChevronRight, Zap, Network, Eye, Data
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { useRef, useState } from 'react';
-import brandboostLogo from "../assets/brandboost-logo.png";
+import brandboostMark from "../assets/brandboost-mark.png";
 import cerberusPiImage from 'figma:asset/589bd9a46597d34b4880ea3b09437a44f8b09825.png';
 
 interface HomePageProps {
