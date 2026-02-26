@@ -115,10 +115,10 @@ export function CaseStudiesPage({ darkMode }: CaseStudiesPageProps) {
             </motion.div>
           </motion.div>
           <h1 className="text-5xl md:text-7xl mb-6 text-white">
-            Case <span className="text-cyan-400">Studies</span>
+            Utvalgte <span className="text-cyan-400">Prosjekter</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Explore our portfolio of cutting-edge cybersecurity innovations and solutions deployed for real-world defense scenarios.
+            Utforsk hvordan vi utvikler nettsider, automatisering og AI-løsninger som skaper målbar vekst.
           </p>
         </motion.div>
 
