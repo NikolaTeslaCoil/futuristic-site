@@ -254,15 +254,16 @@ export function CaseStudiesPage({ darkMode }: CaseStudiesPageProps) {
                           />
 
                           {/* Center Icon or Image */}
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <motion.div
-                              animate={{ rotate: study.id === 2 ? 0 : [0, 360] }}
-                              transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                              className={`w-32 h-32 ${study.id === 2 ? 'bg-transparent' : `bg-gradient-to-br ${study.gradient}`} rounded-2xl flex items-center justify-center relative overflow-hidden`}
-                            >
-                              {study.id === 2 ? (
-                                // Cerberus-PI Image
-                                <img 
+<div className="absolute inset-0 flex items-center justify-center">
+  <motion.div
+    animate={{ rotate: [0, 360] }}
+    transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+    className={`w-32 h-32 bg-gradient-to-br ${study.gradient} rounded-2xl flex items-center justify-center relative overflow-hidden`}
+  >
+    <Icon className="w-16 h-16 text-white relative z-10" />
+    <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl" />
+  </motion.div>
+</div> 
                                   src={cerberusPiImage} 
                                   alt="Cerberus-PI Device" 
                                   className="w-full h-full object-cover rounded-2xl relative z-10"
