@@ -44,7 +44,7 @@ export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode 
               <div className="relative w-16 h-16">
                 <img 
                   src={brandboostIcon} 
-                  alt="Yanova Solutions" 
+                  alt="Brandboost Marketing" 
                   className="w-full h-full object-contain drop-shadow-[0_0_10px_rgba(0,183,255,0.5)]"
                 />
               </div>
