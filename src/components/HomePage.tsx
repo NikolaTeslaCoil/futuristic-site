@@ -38,8 +38,8 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
     { icon: Network, title: 'Automatisering & Systemintegrasjon', color: 'purple' },
     { icon: Brain, title: 'AI-Assistenter & Kundedialog', color: 'green' },
     { icon: Cpu, title: 'Digital Strategi & Struktur', color: 'orange' },
-    { icon: Eye, title: 'Konverteringsoptimalisering', color: 'pink' },
-    { icon: Server, title: 'Innholdsproduksjon (Foto & Video)', color: 'indigo' },
+    { icon: Eye, title: 'Innholdsproduksjon (Foto & Video)', color: 'pink' },
+    { icon: Server, title: 'Konverteringsoptimalisering', color: 'indigo' },
   ];
 
   const projects = [
