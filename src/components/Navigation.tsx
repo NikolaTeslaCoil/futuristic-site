@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { Menu, X, Shield, Moon, Sun } from 'lucide-react';
 import { Button } from './ui/button';
-import yanovaLogo from 'figma:asset/f6a544fb3b3b36514746bdcb63017562b8a62f6b.png';
+import brandboostLogo from '../assets/brandboost-logo.png';
 
 interface NavigationProps {
   currentPage: string;
@@ -42,7 +42,7 @@ export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode 
             >
               <div className="relative w-10 h-10">
                 <img 
-                  src={yanovaLogo} 
+                  src={brandboostLogo} 
                   alt="Yanova Solutions" 
                   className="w-full h-full object-contain drop-shadow-[0_0_10px_rgba(0,183,255,0.5)]"
                 />
