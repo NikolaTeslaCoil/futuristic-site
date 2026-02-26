@@ -266,10 +266,10 @@ export function ServicesPage({ darkMode }: ServicesPageProps) {
               </p>
               <div className="flex items-center justify-center gap-4">
                 <Globe className="w-5 h-5 text-cyan-400" />
-                <span className="text-cyan-400">kontakt@dittdomene.no</span>
+                <span className="text-cyan-400">post@brandboostmarketing.no</span>
               </div>
               <p className="text-gray-500 text-sm mt-4">
-                (Bytt e-postadressen over til din egen.)
+                
               </p>
             </div>
           </div>
