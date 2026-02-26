@@ -90,7 +90,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
             Kontakt <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Oss</span>
           </h1>
           <p className={`text-xl max-w-3xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            Let's build the next layer of digital defense together.
+            La oss bygge din neste digitale løsning sammen.
           </p>
         </motion.div>
 
