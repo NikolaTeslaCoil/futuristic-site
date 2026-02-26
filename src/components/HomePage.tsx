@@ -25,7 +25,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
 
   // Navigation items for orbiting icons
   const navigationItems = [
-    { icon: Shield, title: 'Cybersecurity', action: () => setCurrentPage('services'), type: 'page' },
+    { icon: Shield, title: 'AI assistent', action: () => setCurrentPage('services'), type: 'page' },
     { icon: Eye, title: 'Case Studies', action: () => setCurrentPage('case-studies'), type: 'page' },
     { icon: Network, title: 'Tjenester', action: () => setCurrentPage('services'), type: 'page' },
     { icon: Server, title: 'Cerberus-PI', action: () => setCurrentPage('case-studies'), type: 'project' },
