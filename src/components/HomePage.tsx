@@ -355,7 +355,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               </div>
             </motion.div>
             <h2 className={`text-4xl md:text-5xl mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              About <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Yanova</span>
+              Om <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Oss</span>
             </h2>
             <p className={`text-xl leading-relaxed mb-6 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
               Hos Brandboost Marketing mener vi at alle bedrifter fortjener tilgang til den transformative kraften i kunstig intelligens. Vårt oppdrag er å bygge bro mellom kompleks AI-teknologi og praktiske forretningsløsninger, slik at selskaper kan automatisere prosesser, redusere kostnader og fokusere på det de gjør best.
