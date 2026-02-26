@@ -289,22 +289,22 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
             transition={{ delay: 0.3 }}
           >
             <h1 className={`text-5xl md:text-7xl mb-6 tracking-tight ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              <span className={darkMode ? 'text-white' : 'text-gray-900'}>Yanova Solutions</span>
+              <span className={darkMode ? 'text-white' : 'text-gray-900'}>Brandboost Marketing</span>
               <br />
               <span className={`bg-gradient-to-r bg-clip-text text-transparent ${
                 darkMode ? 'from-cyan-400 to-blue-500' : 'from-cyan-600 to-blue-600'
               }`}>
-                Securing the Future
+                Digital Vekst Som Skalerer
               </span>
             </h1>
             <p className={`text-xl mb-8 max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              From cyber defense to smart infrastructure, we build digital trust.
+              Vi utvikler nettsider, automatiserte systemer og AI-løsninger som skaper målbar vekst.
             </p>
             <Button
               onClick={() => setCurrentPage('services')}
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 px-8 py-6 rounded-lg group"
             >
-              Explore Our Innovations
+              Utforsk Tjenester
               <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>
