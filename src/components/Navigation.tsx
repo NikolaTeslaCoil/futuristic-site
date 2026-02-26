@@ -41,7 +41,7 @@ export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode 
               onClick={() => setCurrentPage('home')}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="relative w-14 h-14">
+              <div className="relative w-12 h-12">
                 <img 
                   src={brandboostIcon} 
                   alt="Brandboost Marketing" 
