@@ -15,10 +15,10 @@ export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'services', label: 'Services' },
-    { id: 'case-studies', label: 'Case Studies' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'home', label: 'Hjem' },
+    { id: 'services', label: 'Tjenester' },
+    { id: 'case-studies', label: 'Prosjekter' },
+    { id: 'contact', label: 'Kontakt' },
   ];
 
   return (
