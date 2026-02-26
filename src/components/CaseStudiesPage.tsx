@@ -253,7 +253,7 @@ export function CaseStudiesPage({ darkMode }: CaseStudiesPageProps) {
                             className={`absolute inset-8 border ${study.gradient.includes('cyan') ? 'border-cyan-400/50' : study.gradient.includes('purple') ? 'border-purple-400/50' : study.gradient.includes('green') ? 'border-green-400/50' : 'border-orange-400/50'} rounded-full`}
                           />
 
-                          {/* Center Icon or Image */}
+                         {/* Center Icon */}
 <div className="absolute inset-0 flex items-center justify-center">
   <motion.div
     animate={{ rotate: [0, 360] }}
@@ -263,18 +263,7 @@ export function CaseStudiesPage({ darkMode }: CaseStudiesPageProps) {
     <Icon className="w-16 h-16 text-white relative z-10" />
     <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl" />
   </motion.div>
-</div> 
-                                  src={cerberusPiImage} 
-                                  alt="Cerberus-PI Device" 
-                                  className="w-full h-full object-cover rounded-2xl relative z-10"
-                                  style={{ filter: 'drop-shadow(0 0 10px rgba(0, 183, 255, 0.6))' }}
-                                />
-                              ) : (
-                                <Icon className="w-16 h-16 text-white relative z-10" />
-                              )}
-                              <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl" />
-                            </motion.div>
-                          </div>
+</div>
 
                           {/* Orbiting Elements */}
                           {[...Array(3)].map((_, i) => (
