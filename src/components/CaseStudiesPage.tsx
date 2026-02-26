@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Shield, Cpu, Server, Database, Terminal, Network, Lock, Eye, Zap, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
-import cerberusPImage from "../assets/f6a544fb3b3b36514746bdcb63017562b8a62f6b.png";
+import cerberusPiImage from "../assets/f6a544fb3b3b36514746bdcb63017562b8a62f6b.png";
 
 interface CaseStudiesPageProps {
   darkMode: boolean;
