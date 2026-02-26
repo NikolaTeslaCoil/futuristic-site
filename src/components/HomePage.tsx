@@ -617,10 +617,10 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
           className="container mx-auto px-4 text-center relative z-10"
         >
           <h2 className="text-4xl md:text-6xl mb-6 text-white">
-            Ready to <span className="text-cyan-400">Secure</span> Your Future?
+            Er det på tide med et <span className="text-cyan-400">enklere</span> system?
           </h2>
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Let's build the next layer of digital defense together.
+            Vi hjelper bedrifter som din med å håndtere henvendelser lettere og raskere.
           </p>
           <Button
             onClick={() => setCurrentPage('contact')}
