@@ -40,7 +40,7 @@ export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode 
               onClick={() => setCurrentPage('home')}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="relative w-14 h-14">
+              <div className="relative w-16 h-16">
                 <img 
                   src={brandboostLogo} 
                   alt="Yanova Solutions" 
