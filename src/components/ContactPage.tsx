@@ -131,7 +131,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                       type="text"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="John Doe"
+                      placeholder="Ditt navn"
                       required
                       className={darkMode 
                         ? 'bg-black/50 border-cyan-500/30 focus:border-cyan-400 text-white placeholder:text-gray-600'
@@ -146,7 +146,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="john@example.com"
+                      placeholder="din@epost.no"
                       required
                       className={darkMode 
                         ? 'bg-black/50 border-cyan-500/30 focus:border-cyan-400 text-white placeholder:text-gray-600'
@@ -161,7 +161,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                       type="text"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="How can we help you?"
+                      placeholder="Hva ønsker du hjelp med??"
                       required
                       className={darkMode 
                         ? 'bg-black/50 border-cyan-500/30 focus:border-cyan-400 text-white placeholder:text-gray-600'
@@ -175,7 +175,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
                     <Textarea
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Tell us about your project..."
+                      placeholder="Beskriv hva du ønsker å oppnå..."
                       required
                       rows={6}
                       className={`resize-none ${darkMode 
