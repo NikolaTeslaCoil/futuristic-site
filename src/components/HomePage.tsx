@@ -89,10 +89,10 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                 >
                   <img 
                     <img
-  src={brandboostMark}
-  alt="Brandboost Marketing"
-  className="w-full h-full object-contain drop-shadow-[0_0_10px_rgba(0,183,255,0.5)]"
-/>
+  src={brandboostLogo} 
+                    alt="Yanova Solutions" 
+                    className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(0,183,255,0.6)]"
+                  />
                 </motion.div>
                 
                 <div className="absolute inset-0 bg-cyan-400/20 rounded-full blur-3xl animate-pulse" />
