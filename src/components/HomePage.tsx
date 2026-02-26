@@ -3,7 +3,7 @@ import { Shield, Lock, Brain, Server, Cpu, ChevronRight, Zap, Network, Eye, Data
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { useRef, useState } from 'react';
-import yanovaLogo from 'figma:asset/f6a544fb3b3b36514746bdcb63017562b8a62f6b.png';
+import brandboostLogo from "../assets/brandboost-logo.png";
 import cerberusPiImage from 'figma:asset/589bd9a46597d34b4880ea3b09437a44f8b09825.png';
 
 interface HomePageProps {
