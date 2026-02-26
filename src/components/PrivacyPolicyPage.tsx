@@ -123,7 +123,7 @@ export function PrivacyPolicyPage({ darkMode }: PrivacyPolicyPageProps) {
                 <p className={`leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                   For spørsmål om personvern eller for å utøve dine rettigheter, vennligst kontakt oss på:{' '}
                   <a href="mailto:kontakt@dittdomene.no" className="text-cyan-400 hover:text-cyan-300 underline">
-                    kontakt@dittdomene.no
+                    post@brandboostmarketing.no
                   </a>
                 </p>
               </section>
