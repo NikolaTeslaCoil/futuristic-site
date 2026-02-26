@@ -388,7 +388,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl text-center mb-16"
           >
-            Our <span className="text-cyan-400">Services</span>
+            Våre <span className="text-cyan-400">Tjenester</span>
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
