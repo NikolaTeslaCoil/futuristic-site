@@ -1,0 +1,9 @@
+# robots.txt for Brandboost Marketing
+# Replace YOUR_DEPLOY_DOMAIN with your actual domain when deployed
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+# Update this URL with your actual deployment domain
+Sitemap: https://YOUR_DEPLOY_DOMAIN/sitemap.xml
