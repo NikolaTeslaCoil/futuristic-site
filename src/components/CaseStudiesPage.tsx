@@ -331,18 +331,21 @@ export function CaseStudiesPage({ darkMode }: CaseStudiesPageProps) {
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-12 relative overflow-hidden">
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl mb-4 text-white">
-                Interested in Our Solutions?
-              </h2>
-              <p className="text-gray-400 text-lg mb-6">
-                Discover how Yanova's innovations can protect and enhance your infrastructure.
-              </p>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="inline-flex items-center gap-2 text-cyan-400 cursor-pointer"
-              >
-                <span>Contact Our Team</span>
-                <ArrowRight className="w-5 h-5" />
-              </motion.div>
+  Klar for å komme i gang?
+</h2>
+<p className="text-gray-400 text-lg mb-6">
+  Ta kontakt, så ser vi på hvordan vi kan hjelpe deg med en løsning som gir målbar vekst.
+</p>
+
+<motion.button
+  type="button"
+  whileHover={{ scale: 1.05 }}
+  onClick={() => setCurrentPage('contact')}
+  className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+>
+  <span>Kontakt oss</span>
+  <ArrowRight className="w-5 h-5" />
+</motion.button>
             </div>
             
             {/* Animated Particles */}
