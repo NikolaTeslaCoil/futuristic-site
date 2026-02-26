@@ -367,9 +367,9 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
             }`}>
               <h3 className={`text-2xl mb-4 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>Helhetlig Digital Infrastruktur</h3>
               <p className={`leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                All Yanova products are interconnected: <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Yanova VA Machine</span> identifies vulnerabilities, 
-                <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}> Cerberus-PI</span> monitors and detects intrusions, 
-                <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}> Yanova OS</span> defends, analyzes, and manages systems — 
+                Vi bygger digitale løsninger som henger sømløst sammen: <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>nettside- og appdesign</span> skaper et profesjonelt og tillitsvekkende førsteinntrykk, 
+                <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}> automatiserte arbeidsprosesser</span> effektiviserer driften og reduserer manuelt arbeid, og 
+                <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}> AI-drevne assistenter</span> defends, analyzes, and manages systems — 
                 all controlled under the future <span className={darkMode ? 'text-cyan-400' : 'text-cyan-600'}>Yanova Cloud Control</span> platform. 
                 Together, they form a complete cybersecurity ecosystem <span className={darkMode ? 'text-orange-400' : 'text-orange-600'}>built in Algeria, made for the world</span> — 
                 empowering enterprises, schools, and institutions to secure their digital infrastructures independently.
