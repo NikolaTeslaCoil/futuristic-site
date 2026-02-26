@@ -592,7 +592,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               <div className="relative z-10">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/20 border border-cyan-400/50 rounded-full mb-4">
                   <Zap className="w-4 h-4 text-cyan-400" />
-                  <span className="text-sm text-cyan-400">Coming Soon</span>
+                  <span className="text-sm text-cyan-400">Slik jobber vi</span>
                 </div>
                 <h3 className="text-2xl mb-3 text-white">
                   <span className="text-cyan-400">Smartere Digitale Systemer</span>
