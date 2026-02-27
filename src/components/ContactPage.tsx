@@ -21,19 +21,29 @@ export function ContactPage({ darkMode }: ContactPageProps) {
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
-  const response = await fetch("https://formspree.io/f/mzdaoldl", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(formData)
-  });
+  try {
+    const response = await fetch("https://formspree.io/f/mzdaoldl", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      }),
+    });
 
-  if (response.ok) {
-    alert("Meldingen er sendt!");
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  } else {
-    alert("Noe gikk galt. Prøv igjen.");
+    if (response.ok) {
+      alert("Meldingen er sendt!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } else {
+      alert("Noe gikk galt. Sjekk feltene og prøv igjen.");
+    }
+  } catch (err) {
+    alert("Kunne ikke sende meldingen. Prøv igjen.");
   }
 };
 
