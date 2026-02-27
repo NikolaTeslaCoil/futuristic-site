@@ -18,23 +18,24 @@ export function ContactPage({ darkMode }: ContactPageProps) {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Create mailto link with form data
-    const mailtoLink = `mailto:contact@yanovasolutions.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
-    
-    // Open default email client
-    window.location.href = mailtoLink;
-    
-    // Reset form
-    setTimeout(() => {
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      alert('Your default email client should open. Please send the email to complete your message.');
-    }, 100);
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const response = await fetch("https://formspree.io/f/mzdaoldl", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  });
+
+  if (response.ok) {
+    alert("Meldingen er sendt!");
+    setFormData({ name: '', email: '', subject: '', message: '' });
+  } else {
+    alert("Noe gikk galt. Prøv igjen.");
+  }
+};
 
   const contactInfo = [
     {
