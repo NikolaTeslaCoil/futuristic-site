@@ -294,11 +294,11 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               <span className={`bg-gradient-to-r bg-clip-text text-transparent ${
                 darkMode ? 'from-cyan-400 to-blue-500' : 'from-cyan-600 to-blue-600'
               }`}>
-                Digital Vekst Som Skalerer
+                Nettsider, AI og Automatisering i Oslo
               </span>
             </h1>
             <p className={`text-xl mb-8 max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              Vi utvikler nettsider, automatiserte systemer og AI-løsninger som skaper målbar vekst.
+              Vi hjelper bedrifter i Oslo med moderne nettsider, automatisering og AI-assistenter som skaper målbar vekst.
             </p>
             <Button
               onClick={() => setCurrentPage('services')}
