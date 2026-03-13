@@ -9,14 +9,19 @@ import {
   Sparkles,
   Globe,
   TrendingUp,
+  ChevronRight,
 } from 'lucide-react';
 import { Card } from './ui/card';
+import { Button } from './ui/button';
+import { useNavigate } from 'react-router-dom';
 
 interface ServicesPageProps {
   darkMode: boolean;
 }
 
 export function ServicesPage({ darkMode }: ServicesPageProps) {
+  const navigate = useNavigate();
+
   const services = [
     {
       icon: Code,
@@ -169,6 +174,25 @@ export function ServicesPage({ darkMode }: ServicesPageProps) {
 
                       <h2 className="text-3xl md:text-4xl mb-4 text-white">{service.title}</h2>
                       <p className="text-gray-400 text-lg leading-relaxed">{service.description}</p>
+
+                      {/* Button for Nettside- og appdesign */}
+                      {service.title === 'Nettside- og appdesign' && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.3 }}
+                          className="mt-6"
+                        >
+                          <Button
+                            onClick={() => navigate('/tjenester/lage-nettside-bedrift')}
+                            className={`bg-gradient-to-r ${service.gradient} hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105`}
+                          >
+                            Lag nettside for bedrift
+                            <ChevronRight className="ml-1 group-hover:translate-x-1 transition-transform" />
+                          </Button>
+                        </motion.div>
+                      )}
 
                       {/* Animated Decoration */}
                       <div className="mt-6 relative h-1 bg-gray-800 rounded-full overflow-hidden">
