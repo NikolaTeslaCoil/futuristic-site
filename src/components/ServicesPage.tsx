@@ -13,15 +13,13 @@ import {
 } from 'lucide-react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface ServicesPageProps {
   darkMode: boolean;
 }
 
 export function ServicesPage({ darkMode }: ServicesPageProps) {
-  const navigate = useNavigate();
-
   const services = [
     {
       icon: Code,
@@ -184,13 +182,13 @@ export function ServicesPage({ darkMode }: ServicesPageProps) {
                           transition={{ delay: 0.3 }}
                           className="mt-6"
                         >
-                          <Button
-                            onClick={() => navigate('/tjenester/lage-nettside-bedrift')}
-                            className={`bg-gradient-to-r ${service.gradient} hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105`}
+                          <Link
+                            to="/tjenester/lage-nettside-bedrift"
+                            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 bg-gradient-to-r ${service.gradient} hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105 text-white`}
                           >
                             Lag nettside for bedrift
-                            <ChevronRight className="ml-1 group-hover:translate-x-1 transition-transform" />
-                          </Button>
+                            <ChevronRight className="ml-1 pointer-events-none" />
+                          </Link>
                         </motion.div>
                       )}
 
