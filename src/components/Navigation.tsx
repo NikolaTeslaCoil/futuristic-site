@@ -19,6 +19,7 @@ export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode 
     { id: 'home', label: 'Hjem' },
     { id: 'services', label: 'Tjenester' },
     { id: 'case-studies', label: 'Prosjekter' },
+    { id: 'faq', label: 'FAQ' },
     { id: 'contact', label: 'Kontakt' },
   ];
 

@@ -5,6 +5,7 @@ import { HomePage } from './components/HomePage';
 import { ServicesPage } from './components/ServicesPage';
 import { CaseStudiesPage } from './components/CaseStudiesPage';
 import { ContactPage } from './components/ContactPage';
+import { FAQPage } from './components/FAQPage';
 import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
 import { CookiePolicyPage } from './components/CookiePolicyPage';
 import { LageNettsideBedriftPage } from './components/LageNettsideBedriftPage';
@@ -24,6 +25,7 @@ export default function App() {
       home: '/',
       services: '/services',
       'case-studies': '/projects',
+      faq: '/faq',
       contact: '/contact',
       privacy: '/privacy',
       cookies: '/cookies',
@@ -38,6 +40,7 @@ export default function App() {
     if (path === '/' || path === '') return 'home';
     if (path.startsWith('/services')) return 'services';
     if (path.startsWith('/projects')) return 'case-studies';
+    if (path.startsWith('/faq')) return 'faq';
     if (path.startsWith('/contact')) return 'contact';
     if (path.startsWith('/privacy')) return 'privacy';
     if (path.startsWith('/cookies')) return 'cookies';
@@ -102,6 +105,7 @@ export default function App() {
             element={<CaseStudiesPage darkMode={darkMode} setCurrentPage={setCurrentPage} />}
           />
 
+          <Route path="/faq" element={<FAQPage darkMode={darkMode} />} />
           <Route path="/contact" element={<ContactPage darkMode={darkMode} />} />
           <Route path="/privacy" element={<PrivacyPolicyPage darkMode={darkMode} />} />
           <Route path="/cookies" element={<CookiePolicyPage darkMode={darkMode} />} />
