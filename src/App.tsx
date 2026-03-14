@@ -105,7 +105,7 @@ export default function App() {
             element={<CaseStudiesPage darkMode={darkMode} setCurrentPage={setCurrentPage} />}
           />
 
-          <Route path="/faq" element={<FAQPage darkMode={darkMode} />} />
+          <Route path="/faq" element={<FAQPage darkMode={darkMode} setCurrentPage={setCurrentPage} />} />
           <Route path="/contact" element={<ContactPage darkMode={darkMode} />} />
           <Route path="/privacy" element={<PrivacyPolicyPage darkMode={darkMode} />} />
           <Route path="/cookies" element={<CookiePolicyPage darkMode={darkMode} />} />
