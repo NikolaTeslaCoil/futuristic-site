@@ -48,9 +48,8 @@ export default function App() {
     return 'home';
   })();
 
-  // Smooth scroll to top when route changes
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (

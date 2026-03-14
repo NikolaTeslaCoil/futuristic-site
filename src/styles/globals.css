@@ -186,7 +186,6 @@
 
 html {
   font-size: var(--font-size);
-  scroll-behavior: smooth;
 }
 
 /* Custom Cyber Styles */

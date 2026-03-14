@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Shield, Moon, Sun } from 'lucide-react';
 import { Button } from './ui/button';
 import brandboostMark from "../assets/brandboost-mark.png";
@@ -14,6 +14,11 @@ interface NavigationProps {
 
 export function Navigation({ currentPage, setCurrentPage, darkMode, setDarkMode }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileMenuOpen]);
 
   const navItems = [
     { id: 'home', label: 'Hjem' },

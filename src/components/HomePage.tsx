@@ -51,7 +51,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
   return (
     <div ref={containerRef} className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative flex items-center justify-center overflow-hidden" style={{ minHeight: '100svh', touchAction: 'pan-y' }}>
         <motion.div style={{ y, opacity }} className="container mx-auto px-4 text-center relative z-10">
           {/* 3D Navigation Hub */}
           <div className="relative w-96 h-96 mx-auto mb-12 group/hub">
