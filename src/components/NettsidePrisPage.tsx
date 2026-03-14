@@ -168,45 +168,57 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
       <div className="container mx-auto px-4">
 
         {/* HERO */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col items-center text-center gap-6 mb-40 mx-auto max-w-2xl"
-        >
-          <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase">
-            Nettside pris
-          </span>
+        <div className="relative mb-48">
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                'radial-gradient(ellipse 70% 60% at 50% 40%, rgba(6,182,212,0.13) 0%, rgba(37,99,235,0.07) 50%, transparent 100%)',
+              filter: 'blur(40px)',
+              zIndex: 0,
+            }}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="relative z-10 flex flex-col items-center text-center mx-auto max-w-3xl"
+            style={{ paddingBottom: '2rem' }}
+          >
+            <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase mb-6">
+              Nettside pris
+            </span>
 
-          <h1 className="text-4xl md:text-5xl text-white leading-tight">
-            Hva koster en nettside for bedrift?
-          </h1>
+            <h1 className="text-5xl md:text-6xl text-white leading-tight mb-8">
+              Hva koster en nettside for bedrift?
+            </h1>
 
-          <p className="text-lg text-gray-400 leading-relaxed">
-            De fleste bedriftsnettsider ligger mellom 15&nbsp;000 og 25&nbsp;000 kr, avhengig av omfang, funksjoner og behov.
-          </p>
+            <p className="text-lg text-gray-400 leading-relaxed mb-5">
+              De fleste bedriftsnettsider ligger mellom 15&nbsp;000 og 25&nbsp;000 kr, avhengig av omfang, funksjoner og behov.
+            </p>
 
-          <p className="text-base text-gray-500 leading-relaxed">
-            Vi bygger moderne nettsider med tydelig struktur, rask levering og fokus p&aring; henvendelser.
-          </p>
+            <p className="text-base text-gray-500 leading-relaxed mb-10">
+              Vi bygger moderne nettsider med tydelig struktur, rask levering og fokus p&aring; henvendelser.
+            </p>
 
-          <div className="flex flex-wrap justify-center gap-4 pt-2">
-            <Button
-              onClick={() => navigate('/contact')}
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 px-8 py-6"
-            >
-              F&aring; tilbud
-              <ChevronRight className="ml-2" />
-            </Button>
-            <Button
-              onClick={() => navigate('/tjenester/lage-nettside-bedrift')}
-              variant="outline"
-              className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 px-8 py-6"
-            >
-              Se hvordan vi bygger nettsider
-            </Button>
-          </div>
-        </motion.div>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button
+                onClick={() => navigate('/contact')}
+                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 px-8 py-6"
+              >
+                F&aring; tilbud
+                <ChevronRight className="ml-2" />
+              </Button>
+              <Button
+                onClick={() => navigate('/tjenester/lage-nettside-bedrift')}
+                variant="outline"
+                className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 px-8 py-6"
+              >
+                Se hvordan vi bygger nettsider
+              </Button>
+            </div>
+          </motion.div>
+        </div>
         {/* HeroVisual available for reuse: <HeroVisual /> */}
 
         {/* SECTION 1 — Factors */}
