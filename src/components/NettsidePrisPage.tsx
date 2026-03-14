@@ -168,25 +168,11 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
       <div className="container mx-auto px-4">
 
         {/* HERO */}
-        <div className="relative py-20 md:py-28 mb-20">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 flex items-center justify-center"
-          >
-            <div
-              style={{
-                width: '720px',
-                height: '480px',
-                background: 'radial-gradient(ellipse at center, rgba(6,182,212,0.12) 0%, rgba(6,182,212,0.04) 50%, transparent 75%)',
-                filter: 'blur(40px)',
-              }}
-            />
-          </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative z-10 flex flex-col items-center text-center gap-6 mx-auto max-w-2xl"
+          className="flex flex-col items-center text-center gap-6 mb-40 mx-auto max-w-2xl"
         >
           <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase">
             Nettside pris
@@ -221,7 +207,6 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
             </Button>
           </div>
         </motion.div>
-        </div>
         {/* HeroVisual available for reuse: <HeroVisual /> */}
 
         {/* SECTION 1 — Factors */}
