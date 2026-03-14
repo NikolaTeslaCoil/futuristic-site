@@ -260,14 +260,14 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 2 — Pricing Cards */}
-        <section className="mb-32">
+        <section className="mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl mb-8 text-white">
               Vanlig pris p&aring;{' '}
               <span className="text-cyan-400">nettside for bedrift</span>
             </h2>
@@ -314,14 +314,14 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 3 — What's included */}
-        <section className="mb-32">
+        <section className="mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl mb-8 text-white">
               Hva er inkludert i en{' '}
               <span className="text-cyan-400">profesjonell nettside?</span>
             </h2>
@@ -352,14 +352,14 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 4 — Comparison */}
-        <section className="mb-32">
+        <section className="mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl mb-8 text-white">
               Billig nettside vs{' '}
               <span className="text-cyan-400">profesjonell nettside</span>
             </h2>
@@ -426,14 +426,14 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 5 — Steps */}
-        <section className="mb-32">
+        <section className="mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl mb-8 text-white">
               Hvordan f&aring;{' '}
               <span className="text-cyan-400">riktig pris p&aring; nettside?</span>
             </h2>
@@ -470,7 +470,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="text-center mt-4"
         >
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-12 relative overflow-hidden">
             <div className="absolute inset-0 opacity-30">
