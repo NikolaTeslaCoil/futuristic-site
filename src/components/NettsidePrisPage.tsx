@@ -371,11 +371,13 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 border-gray-600/40 backdrop-blur p-8 h-full">
+              <Card className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 border-gray-600/40 backdrop-blur p-8 h-full relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-500 to-gray-600 rounded-t-xl" />
                 <h3 className="text-2xl text-gray-200 mb-6 flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-gray-400" />
                   Billig l&oslash;sning
                 </h3>
+                <div className="border-t border-gray-600/50 mb-6" />
                 <div className="space-y-4">
                   {cheapPoints.map((point, i) => (
                     <motion.div
