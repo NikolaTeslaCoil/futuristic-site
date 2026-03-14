@@ -169,11 +169,18 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
 
         {/* HERO */}
         <div className="relative py-20 md:py-28 mb-20">
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-[700px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px]" />
-          </div>
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-[400px] h-[300px] bg-blue-600/8 rounded-full blur-[80px]" />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          >
+            <div
+              style={{
+                width: '720px',
+                height: '480px',
+                background: 'radial-gradient(ellipse at center, rgba(6,182,212,0.12) 0%, rgba(6,182,212,0.04) 50%, transparent 75%)',
+                filter: 'blur(40px)',
+              }}
+            />
           </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
