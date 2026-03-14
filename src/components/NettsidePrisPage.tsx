@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { CircleCheck as CheckCircle2, ChevronRight, Layers, Paintbrush, Puzzle, FileText, Link2, Wrench, X } from 'lucide-react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
@@ -491,6 +491,11 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
               </h2>
               <p className="text-gray-400 text-lg mb-8">
                 Fortell litt om bedriften din og hva du trenger, s&aring; f&aring;r du et konkret tilbud.
+              </p>
+              <p className="text-sm text-gray-400 mb-4">
+                <Link to="/tjenester/lage-nettside-bedrift" className="text-cyan-400 hover:text-cyan-300 underline">
+                  Se hvordan vi lager nettsider for bedrifter
+                </Link>
               </p>
               <Button
                 onClick={() => navigate('/contact')}
