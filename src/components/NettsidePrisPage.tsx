@@ -173,20 +173,25 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="flex flex-col gap-6"
           >
-            <h1 className="text-4xl md:text-6xl mb-6 text-white leading-tight">
-              Nettside pris &ndash;{' '}
-              <span className="text-cyan-400">hva koster en nettside for bedrift?</span>
+            <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase">
+              Nettside pris
+            </span>
+
+            <h1 className="text-4xl md:text-5xl text-white leading-tight max-w-lg">
+              Hva koster en nettside for bedrift?
             </h1>
-            <p className="text-xl text-gray-400 mb-4 leading-relaxed">
-              Pris p&aring; en profesjonell nettside avhenger av omfang, funksjoner og behov. De fleste
-              bedriftsnettsider ligger mellom 15&nbsp;000 og 25&nbsp;000 kr.
-            </p>
-            <p className="text-lg text-gray-500 mb-10 leading-relaxed">
-              Vi bygger moderne, mobiltilpassede nettsider med tydelig struktur og fokus p&aring; henvendelser.
+
+            <p className="text-lg text-gray-400 leading-relaxed max-w-md">
+              De fleste bedriftsnettsider ligger mellom 15&nbsp;000 og 25&nbsp;000 kr, avhengig av omfang, funksjoner og behov.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <p className="text-base text-gray-500 leading-relaxed max-w-md">
+              Vi bygger moderne nettsider med tydelig struktur, rask levering og fokus p&aring; henvendelser.
+            </p>
+
+            <div className="flex flex-wrap gap-4 pt-2">
               <Button
                 onClick={() => navigate('/contact')}
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 px-8 py-6"
