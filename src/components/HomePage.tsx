@@ -52,11 +52,11 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
     <div ref={containerRef} className="pt-20">
       {/* Hero Section */}
       <section className="relative flex items-center justify-center overflow-hidden" style={{ minHeight: '100svh', touchAction: 'pan-y' }}>
-        <motion.div style={{ y, opacity }} className="container mx-auto px-4 text-center relative z-10">
+        <motion.div style={{ y, opacity, touchAction: 'pan-y' }} className="container mx-auto px-4 text-center relative z-10">
           {/* 3D Navigation Hub */}
           <div className="relative w-96 h-96 mx-auto mb-12 group/hub">
             <motion.div
-              className="relative w-full h-full"
+              className="relative w-full h-full pointer-events-none"
               animate={{
                 rotateY: hoveredNav !== null ? 0 : [0, 360],
               }}
@@ -67,8 +67,8 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               }}
             >
               {/* Central Logo Hub */}
-              <motion.div 
-                className="absolute inset-0 rounded-full border-2 border-cyan-500/30 flex items-center justify-center cursor-pointer"
+              <motion.div
+                className="absolute inset-0 rounded-full border-2 border-cyan-500/30 flex items-center justify-center cursor-pointer pointer-events-auto"
                 whileHover={{ scale: 1.05 }}
                 onClick={() => setCurrentPage('home')}
               >
@@ -94,7 +94,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   />
                 </motion.div>
                 
-                <div className="absolute inset-0 bg-cyan-400/20 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute inset-0 bg-cyan-400/20 rounded-full blur-3xl animate-pulse pointer-events-none" />
               </motion.div>
 
               {/* Orbiting Navigation Items */}
@@ -116,7 +116,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   <div key={index}>
                     {/* Navigation Button */}
                     <motion.button
-                      className="absolute w-16 h-16 bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-xl rounded-full border-2 border-cyan-400/50 flex items-center justify-center cursor-pointer group/nav overflow-hidden"
+                      className="absolute w-16 h-16 bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-xl rounded-full border-2 border-cyan-400/50 flex items-center justify-center cursor-pointer group/nav overflow-hidden pointer-events-auto"
                       style={{
                         top: '50%',
                         left: '50%',
@@ -244,7 +244,7 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
               {[...Array(3)].map((_, i) => (
                 <motion.div
                   key={i}
-                  className="absolute border border-cyan-500/10 rounded-full"
+                  className="absolute border border-cyan-500/10 rounded-full pointer-events-none"
                   style={{
                     top: `${10 + i * 10}%`,
                     left: `${10 + i * 10}%`,
