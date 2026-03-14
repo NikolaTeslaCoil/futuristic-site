@@ -371,9 +371,9 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-gray-700/50 backdrop-blur p-8 h-full">
-                <h3 className="text-2xl text-gray-400 mb-6 flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-gray-500" />
+              <Card className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 border-gray-600/40 backdrop-blur p-8 h-full">
+                <h3 className="text-2xl text-gray-200 mb-6 flex items-center gap-3">
+                  <div className="w-3 h-3 rounded-full bg-gray-400" />
                   Billig l&oslash;sning
                 </h3>
                 <div className="space-y-4">
@@ -386,8 +386,8 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
                       transition={{ delay: i * 0.1 }}
                       className="flex items-center gap-3"
                     >
-                      <X className="w-4 h-4 text-gray-600 flex-shrink-0" />
-                      <span className="text-gray-500">{point}</span>
+                      <X className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                      <span className="text-gray-300">{point}</span>
                     </motion.div>
                   ))}
                 </div>
