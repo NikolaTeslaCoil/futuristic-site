@@ -35,8 +35,6 @@ export function Footer({ setCurrentPage, darkMode }: FooterProps) {
               : 'bg-gradient-to-br from-gray-50 to-white border border-cyan-600/20 shadow-xl'
           }`}
         >
-          <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div className="space-y-4">

@@ -74,19 +74,6 @@ export default function App() {
         />
       </div>
 
-      {/* Glowing orbs */}
-      <div
-        className={`fixed top-20 left-10 w-96 h-96 rounded-full blur-3xl pointer-events-none animate-pulse ${
-          darkMode ? 'bg-blue-500/20' : 'bg-blue-400/30'
-        }`}
-      />
-      <div
-        className={`fixed bottom-20 right-10 w-96 h-96 rounded-full blur-3xl pointer-events-none animate-pulse ${
-          darkMode ? 'bg-cyan-500/20' : 'bg-cyan-400/30'
-        }`}
-        style={{ animationDelay: '1s' }}
-      />
-
       <Navigation
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}

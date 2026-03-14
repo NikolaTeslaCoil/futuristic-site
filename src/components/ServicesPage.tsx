@@ -242,10 +242,6 @@ export function ServicesPage({ darkMode }: ServicesPageProps) {
                     </div>
                   </div>
 
-                  {/* Background Glow Effect */}
-                  <div
-                    className={`absolute -bottom-20 ${isEven ? '-left-20' : '-right-20'} w-64 h-64 bg-gradient-to-br ${service.gradient} opacity-20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700`}
-                  />
                 </Card>
               </motion.div>
             );
@@ -260,27 +256,6 @@ export function ServicesPage({ darkMode }: ServicesPageProps) {
           className="mt-20 text-center"
         >
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-12 relative overflow-hidden">
-            <div className="absolute inset-0 opacity-30">
-              {[...Array(3)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute inset-0"
-                  animate={{
-                    background: [
-                      `radial-gradient(circle at ${20 + i * 30}% ${20 + i * 30}%, rgba(0, 183, 255, 0.3) 0%, transparent 50%)`,
-                      `radial-gradient(circle at ${80 - i * 30}% ${80 - i * 30}%, rgba(0, 183, 255, 0.3) 0%, transparent 50%)`,
-                      `radial-gradient(circle at ${20 + i * 30}% ${20 + i * 30}%, rgba(0, 183, 255, 0.3) 0%, transparent 50%)`,
-                    ],
-                  }}
-                  transition={{
-                    duration: 10,
-                    repeat: Infinity,
-                    delay: i * 0.5,
-                  }}
-                />
-              ))}
-            </div>
-
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl mb-4 text-white">Trenger du en skreddersydd løsning?</h2>
               <p className="text-gray-400 text-lg mb-6">

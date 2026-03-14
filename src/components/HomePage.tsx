@@ -94,7 +94,6 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                   />
                 </motion.div>
                 
-                <div className="absolute inset-0 bg-cyan-400/20 rounded-full blur-3xl animate-pulse" />
               </motion.div>
 
               {/* Orbiting Navigation Items */}
@@ -351,7 +350,6 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
             >
               <div className="relative">
                 <Shield className="w-20 h-20 text-cyan-400" />
-                <div className="absolute inset-0 bg-cyan-400 blur-2xl opacity-50" />
               </div>
             </motion.div>
             <h2 className={`text-4xl md:text-5xl mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
@@ -411,7 +409,6 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                       </div>
                       <h3 className="text-xl mb-2 text-white">{service.title}</h3>
                     </div>
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
                   </Card>
                 </motion.div>
               );
@@ -473,9 +470,6 @@ export function HomePage({ setCurrentPage, darkMode }: HomePageProps) {
                     <h3 className={`text-2xl mb-3 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`}>{project.name}</h3>
                     <p className={darkMode ? 'text-gray-400' : 'text-gray-600'}>{project.description}</p>
                   </div>
-                  <div className={`absolute -bottom-10 -right-10 w-40 h-40 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500 ${
-                    darkMode ? 'bg-cyan-500/20' : 'bg-cyan-400/30'
-                  }`} />
                 </Card>
               </motion.div>
             ))}
