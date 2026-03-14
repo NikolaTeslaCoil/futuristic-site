@@ -205,22 +205,6 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
               Vi bygger moderne nettsider med tydelig struktur, rask levering og fokus p&aring; henvendelser.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button
-                onClick={() => navigate('/contact')}
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 px-8 py-6"
-              >
-                F&aring; tilbud
-                <ChevronRight className="ml-2" />
-              </Button>
-              <Button
-                onClick={() => navigate('/tjenester/lage-nettside-bedrift')}
-                variant="outline"
-                className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 px-8 py-6"
-              >
-                Se hvordan vi bygger nettsider
-              </Button>
-            </div>
           </motion.div>
         </div>
         {/* HeroVisual available for reuse: <HeroVisual /> */}
