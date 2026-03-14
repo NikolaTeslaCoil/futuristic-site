@@ -168,13 +168,18 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
       <div className="container mx-auto px-4">
 
         {/* HERO */}
-        <div className="relative mb-48">
+        <div className="relative pt-16 pb-32 mb-32">
           <div
-            className="absolute inset-0 pointer-events-none"
+            className="absolute pointer-events-none"
             style={{
+              top: '-10%',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              width: '900px',
+              height: '600px',
               background:
-                'radial-gradient(ellipse 70% 60% at 50% 40%, rgba(6,182,212,0.13) 0%, rgba(37,99,235,0.07) 50%, transparent 100%)',
-              filter: 'blur(40px)',
+                'radial-gradient(ellipse at 50% 40%, rgba(6,182,212,0.22) 0%, rgba(37,99,235,0.12) 40%, transparent 75%)',
+              filter: 'blur(60px)',
               zIndex: 0,
             }}
           />
@@ -182,22 +187,21 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative z-10 flex flex-col items-center text-center mx-auto max-w-3xl"
-            style={{ paddingBottom: '2rem' }}
+            className="relative z-10 flex flex-col items-center text-center mx-auto max-w-4xl"
           >
-            <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase mb-6">
+            <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase mb-8">
               Nettside pris
             </span>
 
-            <h1 className="text-5xl md:text-6xl text-white leading-tight mb-8">
+            <h1 className="text-6xl md:text-7xl text-white leading-tight mb-10">
               Hva koster en nettside for bedrift?
             </h1>
 
-            <p className="text-lg text-gray-400 leading-relaxed mb-5">
+            <p className="text-xl text-gray-400 leading-relaxed mb-6">
               De fleste bedriftsnettsider ligger mellom 15&nbsp;000 og 25&nbsp;000 kr, avhengig av omfang, funksjoner og behov.
             </p>
 
-            <p className="text-base text-gray-500 leading-relaxed mb-10">
+            <p className="text-lg text-gray-500 leading-relaxed mb-14">
               Vi bygger moderne nettsider med tydelig struktur, rask levering og fokus p&aring; henvendelser.
             </p>
 
