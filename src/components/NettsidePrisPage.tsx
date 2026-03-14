@@ -260,7 +260,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 2 — Pricing Cards */}
-        <section className="mb-40">
+        <section className="pt-20 md:pt-28 mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -314,7 +314,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 3 — What's included */}
-        <section className="mb-40">
+        <section className="pt-20 md:pt-28 mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -352,7 +352,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 4 — Comparison */}
-        <section className="mb-40">
+        <section className="pt-20 md:pt-28 mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -426,7 +426,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         </section>
 
         {/* SECTION 5 — Steps */}
-        <section className="mb-40">
+        <section className="pt-20 md:pt-28 mb-40">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -470,7 +470,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-4"
+          className="text-center pt-20 md:pt-28"
         >
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-12 relative overflow-hidden">
             <div className="absolute inset-0 opacity-30">
