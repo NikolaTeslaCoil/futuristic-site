@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { MessageCircle, HelpCircle, Sparkles, ArrowRight, Send } from 'lucide-react';
+import { MessageCircle, CircleHelp as HelpCircle, Sparkles, ArrowRight, Send } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { Card } from './ui/card';
 
