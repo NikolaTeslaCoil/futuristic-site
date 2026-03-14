@@ -168,7 +168,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
       <div className="container mx-auto px-4">
 
         {/* HERO */}
-        <div className="relative pt-16 pb-32 mb-32">
+        <div className="relative pt-16 pb-48 mb-16">
           <div
             className="absolute pointer-events-none"
             style={{
@@ -226,7 +226,7 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
         {/* HeroVisual available for reuse: <HeroVisual /> */}
 
         {/* SECTION 1 — Factors */}
-        <section className="mt-48 mb-32">
+        <section className="mt-0 mb-32">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
