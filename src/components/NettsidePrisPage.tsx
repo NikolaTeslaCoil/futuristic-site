@@ -168,56 +168,46 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
       <div className="container mx-auto px-4">
 
         {/* HERO */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-32">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-col gap-6"
-          >
-            <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase">
-              Nettside pris
-            </span>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-center text-center gap-6 mb-40 mx-auto max-w-2xl"
+        >
+          <span className="text-sm font-medium tracking-widest text-cyan-400 uppercase">
+            Nettside pris
+          </span>
 
-            <h1 className="text-4xl md:text-5xl text-white leading-tight max-w-lg">
-              Hva koster en nettside for bedrift?
-            </h1>
+          <h1 className="text-4xl md:text-5xl text-white leading-tight">
+            Hva koster en nettside for bedrift?
+          </h1>
 
-            <p className="text-lg text-gray-400 leading-relaxed max-w-md">
-              De fleste bedriftsnettsider ligger mellom 15&nbsp;000 og 25&nbsp;000 kr, avhengig av omfang, funksjoner og behov.
-            </p>
+          <p className="text-lg text-gray-400 leading-relaxed">
+            De fleste bedriftsnettsider ligger mellom 15&nbsp;000 og 25&nbsp;000 kr, avhengig av omfang, funksjoner og behov.
+          </p>
 
-            <p className="text-base text-gray-500 leading-relaxed max-w-md">
-              Vi bygger moderne nettsider med tydelig struktur, rask levering og fokus p&aring; henvendelser.
-            </p>
+          <p className="text-base text-gray-500 leading-relaxed">
+            Vi bygger moderne nettsider med tydelig struktur, rask levering og fokus p&aring; henvendelser.
+          </p>
 
-            <div className="flex flex-wrap gap-4 pt-2">
-              <Button
-                onClick={() => navigate('/contact')}
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 px-8 py-6"
-              >
-                F&aring; tilbud
-                <ChevronRight className="ml-2" />
-              </Button>
-              <Button
-                onClick={() => navigate('/tjenester/lage-nettside-bedrift')}
-                variant="outline"
-                className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 px-8 py-6"
-              >
-                Se hvordan vi bygger nettsider
-              </Button>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden md:flex items-center justify-center"
-          >
-            <HeroVisual />
-          </motion.div>
-        </div>
+          <div className="flex flex-wrap justify-center gap-4 pt-2">
+            <Button
+              onClick={() => navigate('/contact')}
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 px-8 py-6"
+            >
+              F&aring; tilbud
+              <ChevronRight className="ml-2" />
+            </Button>
+            <Button
+              onClick={() => navigate('/tjenester/lage-nettside-bedrift')}
+              variant="outline"
+              className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 px-8 py-6"
+            >
+              Se hvordan vi bygger nettsider
+            </Button>
+          </div>
+        </motion.div>
+        {/* HeroVisual available for reuse: <HeroVisual /> */}
 
         {/* SECTION 1 — Factors */}
         <section className="mb-32">
