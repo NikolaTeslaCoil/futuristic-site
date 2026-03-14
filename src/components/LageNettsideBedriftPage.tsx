@@ -155,11 +155,11 @@ export function LageNettsideBedriftPage({ darkMode }: LageNettsideBedriftPagePro
               <ChevronRight className="ml-2" />
             </Button>
             <Button
-              onClick={() => navigate('/projects')}
+              onClick={() => navigate('/tjenester/nettside-pris')}
               variant="outline"
               className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 px-8 py-6"
             >
-              Se prosjekter
+              Se full prisguide
             </Button>
           </div>
         </motion.div>

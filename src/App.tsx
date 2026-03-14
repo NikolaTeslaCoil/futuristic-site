@@ -9,6 +9,7 @@ import { FAQPage } from './components/FAQPage';
 import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
 import { CookiePolicyPage } from './components/CookiePolicyPage';
 import { LageNettsideBedriftPage } from './components/LageNettsideBedriftPage';
+import { NettsidePrisPage } from './components/NettsidePrisPage';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 
@@ -98,6 +99,7 @@ export default function App() {
           <Route path="/" element={<HomePage setCurrentPage={setCurrentPage} darkMode={darkMode} />} />
           <Route path="/services" element={<ServicesPage darkMode={darkMode} />} />
           <Route path="/tjenester/lage-nettside-bedrift" element={<LageNettsideBedriftPage darkMode={darkMode} />} />
+          <Route path="/tjenester/nettside-pris" element={<NettsidePrisPage darkMode={darkMode} />} />
 
           {/* Your old "case-studies" becomes a real URL: /projects */}
           <Route
