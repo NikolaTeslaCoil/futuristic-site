@@ -169,6 +169,20 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
 
         {/* HERO */}
         <div className="relative pt-16 pb-48 mb-16">
+          <div
+            className="absolute pointer-events-none"
+            style={{
+              top: '-10%',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              width: '900px',
+              height: '600px',
+              background:
+                'radial-gradient(ellipse at 50% 40%, rgba(6,182,212,0.22) 0%, rgba(37,99,235,0.12) 40%, transparent 75%)',
+              filter: 'blur(60px)',
+              zIndex: 0,
+            }}
+          />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -454,6 +468,23 @@ export function NettsidePrisPage({ darkMode }: NettsidePrisPageProps) {
           className="text-center pt-20 md:pt-28"
         >
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-12 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-30">
+              {[...Array(3)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute inset-0"
+                  animate={{
+                    background: [
+                      `radial-gradient(circle at ${20 + i * 30}% ${20 + i * 30}%, rgba(0, 183, 255, 0.3) 0%, transparent 50%)`,
+                      `radial-gradient(circle at ${80 - i * 30}% ${80 - i * 30}%, rgba(0, 183, 255, 0.3) 0%, transparent 50%)`,
+                      `radial-gradient(circle at ${20 + i * 30}% ${20 + i * 30}%, rgba(0, 183, 255, 0.3) 0%, transparent 50%)`,
+                    ],
+                  }}
+                  transition={{ duration: 10, repeat: Infinity, delay: i * 0.5 }}
+                />
+              ))}
+            </div>
+
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl mb-4 text-white">
                 Klar for &aring; finne riktig l&oslash;sning for nettsiden din?

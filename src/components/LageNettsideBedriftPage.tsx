@@ -123,6 +123,7 @@ export function LageNettsideBedriftPage({ darkMode }: LageNettsideBedriftPagePro
               <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto">
                 <Globe className="w-10 h-10 text-white" />
               </div>
+              <div className="absolute inset-0 bg-cyan-400 blur-3xl opacity-30" />
             </div>
           </motion.div>
 
@@ -211,6 +212,7 @@ export function LageNettsideBedriftPage({ darkMode }: LageNettsideBedriftPagePro
                     </motion.div>
                   ))}
                 </div>
+                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-cyan-500/20 rounded-full blur-3xl" />
               </Card>
             </motion.div>
           </div>
@@ -447,6 +449,7 @@ export function LageNettsideBedriftPage({ darkMode }: LageNettsideBedriftPagePro
                   </div>
                 </div>
               </div>
+              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-cyan-500/20 rounded-full blur-3xl" />
             </Card>
           </motion.div>
         </section>
@@ -494,6 +497,27 @@ export function LageNettsideBedriftPage({ darkMode }: LageNettsideBedriftPagePro
           className="relative"
         >
           <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-16 text-center relative overflow-hidden">
+            <div className="absolute inset-0">
+              {[...Array(3)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute inset-0"
+                  animate={{
+                    background: [
+                      `radial-gradient(circle at ${20 + i * 30}% ${20 + i * 30}%, rgba(0, 183, 255, 0.2) 0%, transparent 50%)`,
+                      `radial-gradient(circle at ${80 - i * 30}% ${80 - i * 30}%, rgba(0, 183, 255, 0.2) 0%, transparent 50%)`,
+                      `radial-gradient(circle at ${20 + i * 30}% ${20 + i * 30}%, rgba(0, 183, 255, 0.2) 0%, transparent 50%)`,
+                    ],
+                  }}
+                  transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    delay: i * 0.5,
+                  }}
+                />
+              ))}
+            </div>
+
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl mb-6 text-white">
                 Klar for å lage nettside for{' '}
