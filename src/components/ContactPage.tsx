@@ -51,7 +51,7 @@ export function ContactPage({ darkMode }: ContactPageProps) {
     {
       icon: Mail,
       title: 'Email',
-      value: 'kontakt@brandboostmedia.no',
+      value: 'post@brandboostmarketing.no',
       link: 'mailto:kontakt@brandboostmedia.no'
     },
     {
