@@ -10,6 +10,7 @@ import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
 import { CookiePolicyPage } from './components/CookiePolicyPage';
 import { LageNettsideBedriftPage } from './components/LageNettsideBedriftPage';
 import { NettsidePrisPage } from './components/NettsidePrisPage';
+import { NettsideOsloPage } from './components/NettsideOsloPage';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 
@@ -30,6 +31,7 @@ export default function App() {
       contact: '/contact',
       privacy: '/privacy',
       cookies: '/cookies',
+      'nettside-oslo': '/nettside-oslo',
     };
 
     navigate(map[page] ?? '/');
@@ -99,6 +101,7 @@ export default function App() {
           <Route path="/services" element={<ServicesPage darkMode={darkMode} />} />
           <Route path="/tjenester/lage-nettside-bedrift" element={<LageNettsideBedriftPage darkMode={darkMode} />} />
           <Route path="/tjenester/nettside-pris" element={<NettsidePrisPage darkMode={darkMode} />} />
+          <Route path="/nettside-oslo" element={<NettsideOsloPage darkMode={darkMode} />} />
 
           {/* Your old "case-studies" becomes a real URL: /projects */}
           <Route
