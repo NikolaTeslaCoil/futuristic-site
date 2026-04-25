@@ -12,45 +12,45 @@ const whyUsCards = [
   {
     icon: Zap,
     title: 'Rask levering',
-    text: 'Vi leverer vanligvis nettsider innen 1\u20133 uker, avhengig av omfang.',
+    text: 'Vi leverer vanligvis nettsider innen 1–3 uker, avhengig av omfang.',
   },
   {
     icon: Building2,
-    title: 'Forst\u00e5else av lokale bedrifter',
-    text: 'Vi kjenner behovene til sm\u00e5 og mellomstore bedrifter i Oslo og bygger nettsider som passer markedet.',
+    title: 'Forståelse av lokale bedrifter',
+    text: 'Vi kjenner behovene til små og mellomstore bedrifter i Oslo og bygger nettsider som passer markedet.',
   },
   {
     icon: Paintbrush,
     title: 'Moderne design',
-    text: 'Nettsiden bygges med et profesjonelt uttrykk som skaper tillit fra f\u00f8rste sekund.',
+    text: 'Nettsiden bygges med et profesjonelt uttrykk som skaper tillit fra første sekund.',
   },
   {
     icon: MousePointerClick,
-    title: 'Fokus p\u00e5 henvendelser',
-    text: 'Struktur, tekst og CTA-er settes opp for \u00e5 gj\u00f8re det enkelt for kunder \u00e5 kontakte deg.',
+    title: 'Fokus på henvendelser',
+    text: 'Struktur, tekst og CTA-er settes opp for å gjøre det enkelt for kunder å kontakte deg.',
   },
 ];
 
 const businessTypes = [
-  'H\u00e5ndverkere',
+  'Håndverkere',
   'Konsulenter',
   'Lokale tjenestebedrifter',
   'Oppstartsbedrifter',
-  'Sm\u00e5 og mellomstore selskaper',
+  'Små og mellomstore selskaper',
 ];
 
 export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
   const navigate = useNavigate();
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-32 pb-24">
       <div className="container mx-auto px-4">
 
         {/* Hero */}
-        <motion.div
+        <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-32 max-w-4xl mx-auto"
+          className="text-center max-w-4xl mx-auto pb-32 md:pb-40"
         >
           <h1 className="text-5xl md:text-7xl mb-8 text-white leading-tight">
             Nettside i Oslo &ndash;{' '}
@@ -59,9 +59,10 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
             for bedrifter
           </h1>
 
-          <p className="text-xl text-gray-400 leading-relaxed mb-4">
+          <p className="text-xl text-gray-400 leading-relaxed mb-5">
             Vi lager moderne og mobiltilpassede nettsider for bedrifter i Oslo.
           </p>
+
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-3xl mx-auto">
             Fokus p&aring; tydelig budskap, rask levering og l&oslash;sninger som skaper flere
             henvendelser. Enten du starter nytt eller trenger en oppgradering, bygger vi nettsider
@@ -75,15 +76,15 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
             F&aring; tilbud
             <ChevronRight className="ml-2" />
           </Button>
-        </motion.div>
+        </motion.section>
 
-        {/* Section 1 — Nettsider for bedrifter i Oslo */}
-        <section className="mb-32 max-w-4xl mx-auto">
+        {/* Section 1 */}
+        <section className="py-24 md:py-32 max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-8 text-center"
+            className="text-4xl md:text-5xl mb-10 text-center text-white"
           >
             Nettsider for bedrifter{' '}
             <span className="text-cyan-400">i Oslo</span>
@@ -93,9 +94,9 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center"
+            className="text-center space-y-5"
           >
-            <p className="text-xl text-gray-400 leading-relaxed mb-4">
+            <p className="text-xl text-gray-400 leading-relaxed">
               Oslo er et konkurransepreget marked, og en god nettside m&aring; gj&oslash;re mer enn
               &aring; se bra ut. Den m&aring; forklare hva bedriften tilbyr, bygge tillit raskt og
               gj&oslash;re det enkelt for potensielle kunder &aring; ta kontakt.
@@ -107,19 +108,19 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.div>
         </section>
 
-        {/* Section 2 — Hvorfor velge oss */}
-        <section className="mb-32">
+        {/* Section 2 */}
+        <section className="py-24 md:py-32">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-16 text-center"
+            className="text-4xl md:text-5xl mb-20 text-center text-white"
           >
             Hvorfor velge oss{' '}
             <span className="text-cyan-400">i Oslo?</span>
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {whyUsCards.map((card, index) => {
               const Icon = card.icon;
               return (
@@ -133,10 +134,10 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
                   <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur p-8 h-full hover:border-cyan-400 transition-all duration-300 group relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 to-blue-500/0 group-hover:from-cyan-500/10 group-hover:to-blue-500/10 transition-all duration-300" />
                     <div className="relative z-10">
-                      <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                      <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <Icon className="w-7 h-7 text-cyan-400" />
                       </div>
-                      <h3 className="text-xl mb-2 text-white">{card.title}</h3>
+                      <h3 className="text-xl mb-3 text-white">{card.title}</h3>
                       <p className="text-gray-400 leading-relaxed">{card.text}</p>
                     </div>
                   </Card>
@@ -146,13 +147,13 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </div>
         </section>
 
-        {/* Section 3 — Hva koster en nettside i Oslo */}
-        <section className="mb-32 max-w-4xl mx-auto">
+        {/* Section 3 */}
+        <section className="py-24 md:py-32 max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-8 text-center"
+            className="text-4xl md:text-5xl mb-10 text-center text-white"
           >
             Hva koster en nettside{' '}
             <span className="text-cyan-400">i Oslo?</span>
@@ -164,7 +165,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-xl text-gray-400 leading-relaxed mb-6">
+            <p className="text-xl text-gray-400 leading-relaxed mb-8">
               Prisen p&aring; en nettside i Oslo avhenger av antall sider, funksjonalitet og hvor mye
               innhold som m&aring; utvikles. De fleste prosjekter ligger mellom 15&nbsp;000 og
               25&nbsp;000&nbsp;kr.
@@ -179,13 +180,13 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.div>
         </section>
 
-        {/* Section 4 — Hvordan vi bygger nettsider */}
-        <section className="mb-32 max-w-4xl mx-auto">
+        {/* Section 4 */}
+        <section className="py-24 md:py-32 max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-8 text-center"
+            className="text-4xl md:text-5xl mb-10 text-center text-white"
           >
             Hvordan vi bygger{' '}
             <span className="text-cyan-400">nettsider</span>
@@ -197,7 +198,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-xl text-gray-400 leading-relaxed mb-6">
+            <p className="text-xl text-gray-400 leading-relaxed mb-8">
               Vi starter med &aring; forst&aring; bedriften, m&aring;lgruppen og hva nettsiden skal
               oppn&aring;. Deretter bygger vi en tydelig struktur, moderne design og en l&oslash;sning
               som fungerer godt p&aring; mobil.
@@ -212,13 +213,13 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.div>
         </section>
 
-        {/* Section 5 — Passer for mange typer bedrifter */}
-        <section className="mb-32">
+        {/* Section 5 */}
+        <section className="py-24 md:py-32">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-16 text-center"
+            className="text-4xl md:text-5xl mb-20 text-center text-white"
           >
             Passer for mange typer{' '}
             <span className="text-cyan-400">bedrifter</span>
@@ -227,7 +228,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           <div className="max-w-2xl mx-auto">
             <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur p-8 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5" />
-              <div className="relative z-10 space-y-4">
+              <div className="relative z-10 space-y-5">
                 {businessTypes.map((type, index) => (
                   <motion.div
                     key={index}
@@ -255,9 +256,9 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative"
+          className="pt-28 md:pt-36"
         >
-          <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-16 text-center relative overflow-hidden">
+          <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0">
               {[...Array(3)].map((_, i) => (
                 <motion.div
@@ -284,7 +285,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
                 Trenger du ny nettside{' '}
                 <span className="text-cyan-400">i Oslo?</span>
               </h2>
-              <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Fortell kort om bedriften din og hva du trenger, s&aring; f&aring;r du et konkret tilbud.
               </p>
               <Button
