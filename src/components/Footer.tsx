@@ -14,6 +14,7 @@ export function Footer({ setCurrentPage, darkMode }: FooterProps) {
     { label: 'Tjenester', page: 'services' },
     { label: 'Prosjekter', page: 'case-studies' },
     { label: 'Kontakt', page: 'contact' },
+    { label: 'Nettside Oslo', page: 'nettside-oslo' }, // ✅ added
   ];
 
   const legalLinks = [
@@ -92,7 +93,9 @@ export function Footer({ setCurrentPage, darkMode }: FooterProps) {
                 </li>
                 <li className="flex items-start gap-2">
                   <MapPin className={`w-4 h-4 mt-0.5 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`} />
-                  <span className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Eikenga 25,0579 Oslo</span>
+                  <span className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                    Eikenga 25,0579 Oslo
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Clock className={`w-4 h-4 mt-0.5 ${darkMode ? 'text-cyan-400' : 'text-cyan-600'}`} />
@@ -131,9 +134,11 @@ export function Footer({ setCurrentPage, darkMode }: FooterProps) {
                   </a>
                 </li>
               </ul>
-              <div className={`text-xs mt-6 pt-4 border-t ${darkMode ? 'border-cyan-500/20 text-gray-500' : 'border-gray-300 text-gray-500'}`}>
-              
-              </div>
+              <div
+                className={`text-xs mt-6 pt-4 border-t ${
+                  darkMode ? 'border-cyan-500/20 text-gray-500' : 'border-gray-300 text-gray-500'
+                }`}
+              ></div>
             </div>
           </div>
 
