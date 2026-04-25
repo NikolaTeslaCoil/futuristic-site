@@ -226,9 +226,9 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.h2>
 
           <div className="max-w-2xl mx-auto">
-            <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur p-8 relative overflow-hidden">
+            <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur p-10 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5" />
-              <div className="relative z-10 space-y-5">
+              <div className="relative z-10 space-y-6">
                 {businessTypes.map((type, index) => (
                   <motion.div
                     key={index}
