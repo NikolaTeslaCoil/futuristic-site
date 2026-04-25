@@ -63,7 +63,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
             Vi lager moderne og mobiltilpassede nettsider for bedrifter i Oslo.
           </p>
 
-          <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-500 leading-relaxed mb-14 max-w-3xl mx-auto">
             Fokus p&aring; tydelig budskap, rask levering og l&oslash;sninger som skaper flere
             henvendelser. Enten du starter nytt eller trenger en oppgradering, bygger vi nettsider
             som gir et profesjonelt f&oslash;rsteinntrykk.
