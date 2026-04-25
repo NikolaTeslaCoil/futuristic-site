@@ -229,9 +229,9 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.h2>
 
           <div className="max-w-2xl mx-auto">
-            <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5" />
-              <div className="relative z-10 space-y-6 px-8 py-10 sm:px-12 sm:py-12 md:px-14 md:py-14">
+            <div className="relative rounded-xl border border-cyan-500/30 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 pointer-events-none" />
+              <div className="relative z-10 flex flex-col gap-7 p-10 sm:p-12 md:p-14">
                 {businessTypes.map(({ label, icon: Icon }, index) => (
                   <motion.div
                     key={index}
@@ -241,7 +241,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-5 group/item"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                    <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-gray-300 text-lg group-hover/item:text-white transition-colors">
@@ -250,7 +250,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
                   </motion.div>
                 ))}
               </div>
-            </Card>
+            </div>
           </div>
         </section>
 
