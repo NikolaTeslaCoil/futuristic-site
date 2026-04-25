@@ -50,7 +50,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl mx-auto pb-32 md:pb-40"
+          className="text-center max-w-4xl mx-auto pb-24 md:pb-28"
         >
           <h1 className="text-5xl md:text-7xl mb-8 text-white leading-tight">
             Nettside i Oslo &ndash;{' '}
@@ -256,7 +256,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="pt-28 md:pt-36"
+          className="pt-32 md:pt-40"
         >
           <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0">
