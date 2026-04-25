@@ -109,7 +109,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 2 */}
-        <section className="mb-28 md:mb-48">
+        <section className="pt-8 md:pt-12 mb-28 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
