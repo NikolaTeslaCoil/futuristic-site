@@ -50,7 +50,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl mx-auto pb-24 md:pb-28"
+          className="text-center max-w-4xl mx-auto"
         >
           <h1 className="text-5xl md:text-7xl mb-8 text-white leading-tight">
             Nettside i Oslo &ndash;{' '}
@@ -79,7 +79,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </motion.section>
 
         {/* Section 1 */}
-        <section className="py-28 md:py-36 max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +109,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 2 */}
-        <section className="py-28 md:py-36">
+        <section>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -148,7 +148,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 3 */}
-        <section className="py-28 md:py-36 max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -181,7 +181,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 4 */}
-        <section className="py-28 md:py-36 max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -214,7 +214,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 5 */}
-        <section className="py-28 md:py-36">
+        <section>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -256,7 +256,6 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="pt-32 md:pt-40"
         >
           <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0">
