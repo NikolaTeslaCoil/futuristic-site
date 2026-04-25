@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useNavigate, Link } from 'react-router-dom';
-import { ChevronRight, Zap, Building2, Paintbrush, MousePointerClick, Users } from 'lucide-react';
+import { ChevronRight, Zap, Building2, Paintbrush, MousePointerClick, Hammer, Briefcase, MapPin, Rocket, Building, type LucideIcon } from 'lucide-react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 
@@ -31,12 +31,12 @@ const whyUsCards = [
   },
 ];
 
-const businessTypes = [
-  'Håndverkere',
-  'Konsulenter',
-  'Lokale tjenestebedrifter',
-  'Oppstartsbedrifter',
-  'Små og mellomstore selskaper',
+const businessTypes: { label: string; icon: LucideIcon }[] = [
+  { label: 'Håndverkere', icon: Hammer },
+  { label: 'Konsulenter', icon: Briefcase },
+  { label: 'Lokale tjenestebedrifter', icon: MapPin },
+  { label: 'Oppstartsbedrifter', icon: Rocket },
+  { label: 'Små og mellomstore selskaper', icon: Building },
 ];
 
 const sectionSpacing = 'py-20 md:py-32';
@@ -229,23 +229,23 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.h2>
 
           <div className="max-w-2xl mx-auto">
-            <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur px-10 py-12 md:px-12 md:py-14 relative overflow-hidden">
+            <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5" />
-              <div className="relative z-10 space-y-8">
-                {businessTypes.map((type, index) => (
+              <div className="relative z-10 space-y-6 px-8 py-10 sm:px-12 sm:py-12 md:px-14 md:py-14">
+                {businessTypes.map(({ label, icon: Icon }, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-center gap-4 group/item"
+                    className="flex items-center gap-5 group/item"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                      <Users className="w-4 h-4 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-gray-300 text-lg group-hover/item:text-white transition-colors">
-                      {type}
+                      {label}
                     </span>
                   </motion.div>
                 ))}
