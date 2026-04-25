@@ -43,14 +43,14 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
   const navigate = useNavigate();
 
   return (
-    <div className="pt-32 pb-32">
+    <div className="pt-32 pb-20">
       <div className="container mx-auto px-4">
 
         {/* Hero */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl mx-auto mb-40"
+          className="text-center max-w-4xl mx-auto mb-28 md:mb-48"
         >
           <h1 className="text-5xl md:text-7xl mb-8 text-white leading-tight">
             Nettside i Oslo &ndash;{' '}
@@ -79,12 +79,12 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </motion.section>
 
         {/* Section 1 */}
-        <section className="max-w-4xl mx-auto mb-44">
+        <section className="max-w-4xl mx-auto mb-28 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-10 text-center text-white"
+            className="text-4xl md:text-5xl mb-12 text-center text-white"
           >
             Nettsider for bedrifter{' '}
             <span className="text-cyan-400">i Oslo</span>
@@ -109,12 +109,12 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 2 */}
-        <section className="mb-44">
+        <section className="mb-28 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-20 text-center text-white"
+            className="text-4xl md:text-5xl mb-16 text-center text-white"
           >
             Hvorfor velge oss{' '}
             <span className="text-cyan-400">i Oslo?</span>
@@ -148,12 +148,12 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 3 */}
-        <section className="max-w-4xl mx-auto mb-40">
+        <section className="max-w-4xl mx-auto mb-28 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-10 text-center text-white"
+            className="text-4xl md:text-5xl mb-12 text-center text-white"
           >
             Hva koster en nettside{' '}
             <span className="text-cyan-400">i Oslo?</span>
@@ -181,12 +181,12 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 4 */}
-        <section className="max-w-4xl mx-auto mb-44">
+        <section className="max-w-4xl mx-auto mb-28 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-10 text-center text-white"
+            className="text-4xl md:text-5xl mb-12 text-center text-white"
           >
             Hvordan vi bygger{' '}
             <span className="text-cyan-400">nettsider</span>
@@ -214,12 +214,12 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 5 */}
-        <section className="mb-44">
+        <section className="mb-28 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-20 text-center text-white"
+            className="text-4xl md:text-5xl mb-16 text-center text-white"
           >
             Passer for mange typer{' '}
             <span className="text-cyan-400">bedrifter</span>
