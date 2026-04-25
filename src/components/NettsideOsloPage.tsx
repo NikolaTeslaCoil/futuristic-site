@@ -226,9 +226,9 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.h2>
 
           <div className="max-w-2xl mx-auto">
-            <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur p-10 relative overflow-hidden">
+            <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur px-10 py-12 md:px-12 md:py-14 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5" />
-              <div className="relative z-10 space-y-6">
+              <div className="relative z-10 space-y-7">
                 {businessTypes.map((type, index) => (
                   <motion.div
                     key={index}
@@ -236,9 +236,9 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-center gap-3 group/item"
+                    className="flex items-center gap-4 group/item"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                    <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
                       <Users className="w-4 h-4 text-white" />
                     </div>
                     <span className="text-gray-300 text-lg group-hover/item:text-white transition-colors">
@@ -256,6 +256,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          className="relative"
         >
           <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0">
