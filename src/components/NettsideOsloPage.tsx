@@ -44,7 +44,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
 
   return (
     <div className="pt-32 pb-32">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 flex flex-col gap-36 md:gap-48">
 
         {/* Hero */}
         <motion.section
