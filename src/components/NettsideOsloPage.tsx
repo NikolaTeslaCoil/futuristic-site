@@ -43,7 +43,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
   const navigate = useNavigate();
 
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-32 pb-32">
       <div className="container mx-auto px-4">
 
         {/* Hero */}
