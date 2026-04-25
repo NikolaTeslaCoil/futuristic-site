@@ -39,6 +39,9 @@ const businessTypes = [
   'Små og mellomstore selskaper',
 ];
 
+const sectionSpacing = 'py-20 md:py-32';
+const sectionDivider = 'border-t border-white/[0.06]';
+
 export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
   const navigate = useNavigate();
 
@@ -50,7 +53,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl mx-auto mb-36 md:mb-48"
+          className="text-center max-w-4xl mx-auto pb-24 md:pb-36"
         >
           <h1 className="text-5xl md:text-7xl mb-8 text-white leading-tight">
             Nettside i Oslo &ndash;{' '}
@@ -78,13 +81,13 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </Button>
         </motion.section>
 
-        {/* Section 1 */}
-        <section className="max-w-4xl mx-auto mb-24 md:mb-32">
+        {/* Section 1 - Nettsider for bedrifter i Oslo */}
+        <section className={`${sectionSpacing} ${sectionDivider} max-w-4xl mx-auto`}>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-12 text-center text-white"
+            className="text-4xl md:text-5xl mb-10 text-center text-white"
           >
             Nettsider for bedrifter{' '}
             <span className="text-cyan-400">i Oslo</span>
@@ -108,8 +111,8 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.div>
         </section>
 
-        {/* Section 2 */}
-        <section className="pt-16 md:pt-24 border-t border-white/5 mb-28 md:mb-48">
+        {/* Section 2 - Hvorfor velge oss */}
+        <section className={`${sectionSpacing} ${sectionDivider}`}>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -147,13 +150,13 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </div>
         </section>
 
-        {/* Section 3 */}
-        <section className="max-w-4xl mx-auto mb-28 md:mb-48">
+        {/* Section 3 - Hva koster en nettside */}
+        <section className={`${sectionSpacing} ${sectionDivider} max-w-4xl mx-auto`}>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-12 text-center text-white"
+            className="text-4xl md:text-5xl mb-10 text-center text-white"
           >
             Hva koster en nettside{' '}
             <span className="text-cyan-400">i Oslo?</span>
@@ -180,13 +183,13 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.div>
         </section>
 
-        {/* Section 4 */}
-        <section className="max-w-4xl mx-auto mb-28 md:mb-48">
+        {/* Section 4 - Hvordan vi bygger nettsider */}
+        <section className={`${sectionSpacing} ${sectionDivider} max-w-4xl mx-auto`}>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl mb-12 text-center text-white"
+            className="text-4xl md:text-5xl mb-10 text-center text-white"
           >
             Hvordan vi bygger{' '}
             <span className="text-cyan-400">nettsider</span>
@@ -213,8 +216,8 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           </motion.div>
         </section>
 
-        {/* Section 5 */}
-        <section className="mb-32 md:mb-48">
+        {/* Section 5 - Passer for mange typer bedrifter */}
+        <section className={`${sectionSpacing} ${sectionDivider}`}>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -256,7 +259,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-8"
+          className="pt-20 md:pt-32"
         >
           <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0">
