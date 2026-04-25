@@ -50,7 +50,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl mx-auto mb-28 md:mb-48"
+          className="text-center max-w-4xl mx-auto mb-36 md:mb-48"
         >
           <h1 className="text-5xl md:text-7xl mb-8 text-white leading-tight">
             Nettside i Oslo &ndash;{' '}
@@ -63,7 +63,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
             Vi lager moderne og mobiltilpassede nettsider for bedrifter i Oslo.
           </p>
 
-          <p className="text-lg text-gray-500 leading-relaxed mb-14 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-500 leading-relaxed mb-16 max-w-3xl mx-auto">
             Fokus p&aring; tydelig budskap, rask levering og l&oslash;sninger som skaper flere
             henvendelser. Enten du starter nytt eller trenger en oppgradering, bygger vi nettsider
             som gir et profesjonelt f&oslash;rsteinntrykk.
@@ -79,7 +79,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </motion.section>
 
         {/* Section 1 */}
-        <section className="max-w-4xl mx-auto mb-28 md:mb-48">
+        <section className="max-w-4xl mx-auto mb-36 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
