@@ -285,8 +285,8 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
 
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl mb-6 text-white">
-                Trenger du ny nettside{' '}
-                <span className="text-cyan-400">i Oslo?</span>
+                Trenger du ny {' '}
+                <span className="text-cyan-400">nettside?</span>
               </h2>
               <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Fortell kort om bedriften din og hva du trenger, s&aring; f&aring;r du et konkret tilbud.
