@@ -44,13 +44,13 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
 
   return (
     <div className="pt-32 pb-32">
-      <div className="container mx-auto px-4 flex flex-col gap-36 md:gap-48">
+      <div className="container mx-auto px-4">
 
         {/* Hero */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center max-w-4xl mx-auto"
+          className="text-center max-w-4xl mx-auto mb-40"
         >
           <h1 className="text-5xl md:text-7xl mb-8 text-white leading-tight">
             Nettside i Oslo &ndash;{' '}
@@ -79,7 +79,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </motion.section>
 
         {/* Section 1 */}
-        <section className="max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto mb-44">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +109,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 2 */}
-        <section>
+        <section className="mb-44">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -148,7 +148,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 3 */}
-        <section className="max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto mb-40">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -181,7 +181,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 4 */}
-        <section className="max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto mb-44">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -214,7 +214,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 5 */}
-        <section>
+        <section className="mb-44">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
