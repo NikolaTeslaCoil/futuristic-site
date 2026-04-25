@@ -214,7 +214,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
         </section>
 
         {/* Section 5 */}
-        <section className="mb-28 md:mb-48">
+        <section className="mb-32 md:mb-48">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -228,7 +228,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           <div className="max-w-2xl mx-auto">
             <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 backdrop-blur px-10 py-12 md:px-12 md:py-14 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5" />
-              <div className="relative z-10 space-y-7">
+              <div className="relative z-10 space-y-8">
                 {businessTypes.map((type, index) => (
                   <motion.div
                     key={index}
@@ -256,7 +256,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative"
+          className="mt-8"
         >
           <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-cyan-500/50 backdrop-blur p-12 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0">
