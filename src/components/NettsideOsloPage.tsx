@@ -231,7 +231,7 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
           <div className="max-w-2xl mx-auto">
             <div className="relative rounded-xl border border-cyan-500/30 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 pointer-events-none" />
-              <div className="relative z-10 flex flex-col gap-7 p-10 sm:p-12 md:p-14">
+              <div className="relative z-10 space-y-8 p-8 md:p-12">
                 {businessTypes.map(({ label, icon: Icon }, index) => (
                   <motion.div
                     key={index}
@@ -239,10 +239,10 @@ export function NettsideOsloPage({ darkMode }: NettsideOsloPageProps) {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-center gap-5 group/item"
+                    className="flex items-center gap-4 group/item"
                   >
-                    <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-white" />
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
                     <span className="text-gray-300 text-lg group-hover/item:text-white transition-colors">
                       {label}
